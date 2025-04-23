@@ -20,6 +20,8 @@ import Mathematics from "@/pages/subjects/Mathematics";
 import Economics from "@/pages/subjects/Economics";
 import ComputerScience from "@/pages/subjects/ComputerScience";
 import EnglishLanguage from "@/pages/subjects/EnglishLanguage";
+import StudyTools from "@/pages/subjects/StudyTools"; // Import the new component
+
 
 function Router() {
   return (
@@ -31,17 +33,18 @@ function Router() {
           <Route path="/last-minute-tips" component={LastMinuteTips} />
           <Route path="/resources" component={Resources} />
           <Route path="/hard-questions" component={HardQuestions} />
-          
+
           {/* Subject Routes */}
           <Route path="/subjects/chemistry" component={Chemistry} />
           <Route path="/subjects/biology" component={Biology} />
           <Route path="/subjects/physics" component={Physics} />
-          <Route path="/subjects/french" component={French} />
           <Route path="/subjects/mathematics" component={Mathematics} />
           <Route path="/subjects/economics" component={Economics} />
           <Route path="/subjects/computer-science" component={ComputerScience} />
+          <Route path="/subjects/french" component={French} />
           <Route path="/subjects/english-language" component={EnglishLanguage} />
-          
+          <Route path="/subjects/study-tools" component={StudyTools} />
+
           <Route component={NotFound} />
         </Switch>
       </main>
