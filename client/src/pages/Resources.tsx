@@ -110,7 +110,7 @@ const Resources = () => {
               title={subject.title}
               icon={subject.icon}
               color={subject.color as any}
-              links={subject.links}
+              path={subject.path}
             />
           ))}
         </div>
