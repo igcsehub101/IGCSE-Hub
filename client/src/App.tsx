@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import LastMinuteTips from "@/pages/LastMinuteTips";
 import Resources from "@/pages/Resources";
 import HardQuestions from "@/pages/HardQuestions";
+import Admin from "@/pages/Admin";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ function Router() {
           <Route path="/last-minute-tips" component={LastMinuteTips} />
           <Route path="/resources" component={Resources} />
           <Route path="/hard-questions" component={HardQuestions} />
+          <Route path="/admin" component={Admin} />
           <Route component={NotFound} />
         </Switch>
       </main>
