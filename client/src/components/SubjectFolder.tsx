@@ -5,13 +5,15 @@ interface SubjectFolderProps {
   title: string;
   icon: LucideIcon;
   color: "red" | "blue" | "pink" | "yellow" | "green" | "purple" | "orange";
-  links: { label: string; url: string }[];
+  path: string;
+  links?: { label: string; url: string }[];
 }
 
 const SubjectFolder = ({
   title,
   icon: Icon,
   color,
+  path,
   links,
 }: SubjectFolderProps) => {
   const getColorClass = (color: string) => {
@@ -44,19 +46,24 @@ const SubjectFolder = ({
 
   return (
     <div className="mini-folder">
-      <div className={`${getColorClass(color)} p-4 rounded-lg shadow-md text-center h-full flex flex-col`}>
-        <Icon className={`h-10 w-10 mx-auto mb-3 ${getIconColorClass(color)}`} />
-        <h3 className="font-semibold mb-2">{title}</h3>
-        <div className="mt-auto">
-          {links.map((link, index) => (
-            <Link key={index} href={link.url}>
-              <a className="text-sm text-blue-600 hover:text-blue-800 block mb-1 last:mb-0">
-                {link.label}
-              </a>
-            </Link>
-          ))}
+      <Link href={path}>
+        <div className={`cursor-pointer ${getColorClass(color)} p-4 rounded-lg shadow-md text-center h-full flex flex-col`}>
+          <Icon className={`h-10 w-10 mx-auto mb-3 ${getIconColorClass(color)}`} />
+          <h3 className="font-semibold mb-2">{title}</h3>
+          <div className="mt-auto">
+            {links && links.map((link, index) => (
+              <Link key={index} href={link.url}>
+                <a className="text-sm text-blue-600 hover:text-blue-800 block mb-1 last:mb-0">
+                  {link.label}
+                </a>
+              </Link>
+            ))}
+            {!links && (
+              <span className="text-sm text-gray-600">View resources</span>
+            )}
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

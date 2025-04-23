@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { LinkIcon, Globe, Youtube } from "lucide-react";
 import { 
   FlaskRound, 
@@ -11,6 +12,7 @@ import {
   Laptop, 
   Wrench 
 } from "lucide-react";
+import { Card } from "@/components/ui/card";
 import SubjectFolder from "@/components/SubjectFolder";
 
 const Resources = () => {
@@ -19,101 +21,61 @@ const Resources = () => {
       title: "Chemistry",
       icon: FlaskConical,
       color: "blue",
-      links: [
-        { label: "Past Papers", url: "#chemistry-papers" },
-        { label: "Mark Schemes", url: "#chemistry-marks" },
-        { label: "Video Tutorials", url: "#chemistry-videos" },
-      ],
+      path: "/subjects/chemistry",
     },
     {
       title: "Biology",
       icon: FlaskRound,
       color: "green",
-      links: [
-        { label: "Past Papers", url: "#biology-papers" },
-        { label: "Mark Schemes", url: "#biology-marks" },
-        { label: "Video Tutorials", url: "#biology-videos" },
-      ],
+      path: "/subjects/biology",
     },
     {
       title: "Physics",
       icon: Zap,
       color: "yellow",
-      links: [
-        { label: "Past Papers", url: "#physics-papers" },
-        { label: "Mark Schemes", url: "#physics-marks" },
-        { label: "Video Tutorials", url: "#physics-videos" },
-      ],
+      path: "/subjects/physics",
     },
     {
       title: "Add. Math",
       icon: Calculator,
       color: "pink",
-      links: [
-        { label: "Past Papers", url: "#add-math-papers" },
-        { label: "Mark Schemes", url: "#add-math-marks" },
-        { label: "Video Tutorials", url: "#add-math-videos" },
-      ],
+      path: "/subjects/mathematics",
     },
     {
       title: "Ext. Math",
       icon: PlusSquare,
       color: "purple",
-      links: [
-        { label: "Past Papers", url: "#ext-math-papers" },
-        { label: "Mark Schemes", url: "#ext-math-marks" },
-        { label: "Video Tutorials", url: "#ext-math-videos" },
-      ],
+      path: "/subjects/mathematics",
     },
     {
       title: "French",
       icon: Languages,
       color: "orange",
-      links: [
-        { label: "Past Papers", url: "#french-papers" },
-        { label: "Vocabulary Lists", url: "#french-vocab" },
-        { label: "Grammar Guides", url: "#french-grammar" },
-      ],
+      path: "/subjects/french",
     },
     {
       title: "Economics",
       icon: TrendingUp,
       color: "blue",
-      links: [
-        { label: "Past Papers", url: "#econ-papers" },
-        { label: "Case Studies", url: "#econ-cases" },
-        { label: "Diagram Templates", url: "#econ-diagrams" },
-      ],
+      path: "/subjects/economics",
     },
     {
       title: "English",
       icon: BookOpen,
       color: "green",
-      links: [
-        { label: "Past Papers", url: "#english-papers" },
-        { label: "Essay Examples", url: "#english-essays" },
-        { label: "Writing Tips", url: "#english-tips" },
-      ],
+      path: "/subjects/english-language",
     },
     {
       title: "Comp. Sci.",
       icon: Laptop,
       color: "yellow",
-      links: [
-        { label: "Past Papers", url: "#cs-papers" },
-        { label: "Programming Resources", url: "#cs-programming" },
-        { label: "Algorithm Guides", url: "#cs-algorithms" },
-      ],
+      path: "/subjects/computer-science",
     },
     {
       title: "Study Tools",
       icon: Wrench,
       color: "pink",
-      links: [
-        { label: "Flashcard Maker", url: "#flashcards" },
-        { label: "Study Planners", url: "#planners" },
-        { label: "Note Templates", url: "#templates" },
-      ],
+      path: "#study-tools",
     },
   ];
 

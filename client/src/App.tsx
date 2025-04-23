@@ -12,6 +12,16 @@ import Admin from "@/pages/Admin";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// Subject Pages
+import Chemistry from "@/pages/subjects/Chemistry";
+import Biology from "@/pages/subjects/Biology";
+import Physics from "@/pages/subjects/Physics";
+import French from "@/pages/subjects/French";
+import Mathematics from "@/pages/subjects/Mathematics";
+import Economics from "@/pages/subjects/Economics";
+import ComputerScience from "@/pages/subjects/ComputerScience";
+import EnglishLanguage from "@/pages/subjects/EnglishLanguage";
+
 function Router() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -23,6 +33,17 @@ function Router() {
           <Route path="/resources" component={Resources} />
           <Route path="/hard-questions" component={HardQuestions} />
           <Route path="/admin" component={Admin} />
+          
+          {/* Subject Routes */}
+          <Route path="/subjects/chemistry" component={Chemistry} />
+          <Route path="/subjects/biology" component={Biology} />
+          <Route path="/subjects/physics" component={Physics} />
+          <Route path="/subjects/french" component={French} />
+          <Route path="/subjects/mathematics" component={Mathematics} />
+          <Route path="/subjects/economics" component={Economics} />
+          <Route path="/subjects/computer-science" component={ComputerScience} />
+          <Route path="/subjects/english-language" component={EnglishLanguage} />
+          
           <Route component={NotFound} />
         </Switch>
       </main>
