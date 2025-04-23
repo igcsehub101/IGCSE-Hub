@@ -17,9 +17,6 @@ const Header = () => {
     { name: "Resources", path: "/resources" },
     { name: "Hard Questions", path: "/hard-questions" },
   ];
-  
-  // Admin link - separate from main navigation
-  const adminLink = { name: "Admin", path: "/admin", icon: Settings };
 
   return (
     <header className="gradient-header p-4 shadow-md">
@@ -41,14 +38,6 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link href={adminLink.path}>
-                <a className={`flex items-center text-gray-700 hover:text-gray-900 ${location === adminLink.path ? 'font-semibold' : ''}`}>
-                  <adminLink.icon className="h-4 w-4 mr-1" />
-                  {adminLink.name}
-                </a>
-              </Link>
-            </li>
           </ul>
         </nav>
         
@@ -80,20 +69,6 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            {/* Admin link in mobile menu */}
-            <li>
-              <Link href={adminLink.path}>
-                <a 
-                  className={`flex items-center text-gray-700 hover:text-gray-900 ${
-                    location === adminLink.path ? 'font-semibold' : ''
-                  }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <adminLink.icon className="h-4 w-4 mr-1" />
-                  {adminLink.name}
-                </a>
-              </Link>
-            </li>
           </ul>
         </div>
       )}
