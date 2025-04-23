@@ -38,6 +38,22 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  app.post("/api/resources", async (req: Request, res: Response) => {
+    try {
+      const { subjectId, title, type, url, description } = req.body;
+      const resource = await storage.createResource({
+        subjectId,
+        title,
+        type,
+        url,
+        description
+      });
+      res.status(201).json(resource);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to create resource" });
+    }
+  });
+
   app.get("/api/resources/by-subject/:subjectId", async (req: Request, res: Response) => {
     try {
       const resources = await storage.getResourcesBySubject(parseInt(req.params.subjectId));
@@ -57,6 +73,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  app.post("/api/last-minute-tips", async (req: Request, res: Response) => {
+    try {
+      const { subjectId, content } = req.body;
+      const tip = await storage.createLastMinuteTip({
+        subjectId,
+        content
+      });
+      res.status(201).json(tip);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to create last minute tip" });
+    }
+  });
+
   app.get("/api/last-minute-tips/by-subject/:subjectId", async (req: Request, res: Response) => {
     try {
       const tips = await storage.getLastMinuteTipsBySubject(parseInt(req.params.subjectId));
@@ -73,6 +102,22 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(questions);
     } catch (error) {
       res.status(500).json({ error: "Failed to fetch hard questions" });
+    }
+  });
+
+  app.post("/api/hard-questions", async (req: Request, res: Response) => {
+    try {
+      const { subjectId, title, question, solution, difficulty } = req.body;
+      const hardQuestion = await storage.createHardQuestion({
+        subjectId,
+        title,
+        question,
+        solution,
+        difficulty
+      });
+      res.status(201).json(hardQuestion);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to create hard question" });
     }
   });
 

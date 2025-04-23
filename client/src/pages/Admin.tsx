@@ -14,6 +14,8 @@ import {
   SelectValue 
 } from "@/components/ui/select";
 import { apiRequest } from "@/lib/queryClient";
+// Import the extended RequestInit type from the queryClient file
+import type { ExtendedRequestInit } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { Subject } from "@shared/schema";
 
@@ -52,7 +54,8 @@ const Admin = () => {
   const handleResourceSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await apiRequest("/api/resources", {
+      await apiRequest({
+        url: "/api/resources",
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -64,7 +67,7 @@ const Admin = () => {
           url: resourceForm.url,
           description: resourceForm.description
         }),
-      } as RequestInit);
+      });
       
       toast({
         title: "Success!",
@@ -128,6 +131,9 @@ const Admin = () => {
     try {
       await apiRequest("/api/hard-questions", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
         body: JSON.stringify({
           subjectId: parseInt(questionForm.subjectId),
           title: questionForm.title,
@@ -135,7 +141,7 @@ const Admin = () => {
           solution: questionForm.solution,
           difficulty: parseInt(questionForm.difficulty)
         }),
-      });
+      } as RequestInit);
       
       toast({
         title: "Success!",

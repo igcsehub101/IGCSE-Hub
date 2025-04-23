@@ -1,5 +1,10 @@
 import { QueryClient, QueryFunction } from "@tanstack/react-query";
 
+// Extend the RequestInit type to include url
+export interface ExtendedRequestInit extends RequestInit {
+  url?: string;
+}
+
 async function throwIfResNotOk(res: Response) {
   if (!res.ok) {
     const text = (await res.text()) || res.statusText;
@@ -8,16 +13,31 @@ async function throwIfResNotOk(res: Response) {
 }
 
 export async function apiRequest(
-  method: string,
-  url: string,
-  data?: unknown | undefined,
+  urlOrOptions: string | ExtendedRequestInit,
+  options?: RequestInit,
 ): Promise<Response> {
-  const res = await fetch(url, {
-    method,
-    headers: data ? { "Content-Type": "application/json" } : {},
-    body: data ? JSON.stringify(data) : undefined,
-    credentials: "include",
-  });
+  let res: Response;
+  
+  if (typeof urlOrOptions === 'string') {
+    // The first parameter is a URL
+    const url = urlOrOptions;
+    res = await fetch(url, {
+      ...options,
+      credentials: "include",
+    });
+  } else {
+    // The first parameter is the options object
+    const requestOptions = urlOrOptions;
+    const url = requestOptions.url as string;
+    
+    // Create a new options object without the url property
+    const { url: _, ...fetchOptions } = requestOptions;
+    
+    res = await fetch(url, {
+      ...fetchOptions,
+      credentials: "include",
+    });
+  }
 
   await throwIfResNotOk(res);
   return res;
