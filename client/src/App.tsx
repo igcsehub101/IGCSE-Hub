@@ -10,6 +10,7 @@ import Resources from "@/pages/Resources";
 import HardQuestions from "@/pages/HardQuestions";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Contribute from "@/pages/Contribute"; // Added import
 
 // Subject Pages
 import Chemistry from "@/pages/subjects/Chemistry";
@@ -31,7 +32,8 @@ function Router() {
           <Route path="/last-minute-tips" component={LastMinuteTips} />
           <Route path="/resources" component={Resources} />
           <Route path="/hard-questions" component={HardQuestions} />
-          
+          <Route path="/contribute" component={Contribute} /> {/* Added Contribute route */}
+
           {/* Subject Routes */}
           <Route path="/subjects/chemistry" component={Chemistry} />
           <Route path="/subjects/biology" component={Biology} />
@@ -41,7 +43,7 @@ function Router() {
           <Route path="/subjects/economics" component={Economics} />
           <Route path="/subjects/computer-science" component={ComputerScience} />
           <Route path="/subjects/english-language" component={EnglishLanguage} />
-          
+
           <Route component={NotFound} />
         </Switch>
       </main>
