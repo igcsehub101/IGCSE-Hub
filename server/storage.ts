@@ -5,6 +5,9 @@ import {
   lastMinuteTips, type LastMinuteTip, type InsertLastMinuteTip,
   hardQuestions, type HardQuestion, type InsertHardQuestion 
 } from "@shared/schema";
+import { db } from "./db";
+import { eq } from "drizzle-orm";
+import { pool } from "./db";
 
 export interface IStorage {
   // User methods
@@ -36,6 +39,7 @@ export interface IStorage {
   createHardQuestion(question: InsertHardQuestion): Promise<HardQuestion>;
 }
 
+// Memory storage (for development only)
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
   private subjectsMap: Map<number, Subject>;
@@ -45,6 +49,7 @@ export class MemStorage implements IStorage {
   private currentId: { [key: string]: number };
 
   constructor() {
+    
     this.users = new Map();
     this.subjectsMap = new Map();
     this.resourcesMap = new Map();
@@ -133,7 +138,11 @@ export class MemStorage implements IStorage {
   
   async createResource(insertResource: InsertResource): Promise<Resource> {
     const id = this.currentId.resources++;
-    const resource: Resource = { ...insertResource, id };
+    const resource: Resource = { 
+      ...insertResource, 
+      id,
+      description: insertResource.description || null 
+    };
     this.resourcesMap.set(id, resource);
     return resource;
   }
@@ -177,10 +186,141 @@ export class MemStorage implements IStorage {
   
   async createHardQuestion(insertHardQuestion: InsertHardQuestion): Promise<HardQuestion> {
     const id = this.currentId.hardQuestions++;
-    const hardQuestion: HardQuestion = { ...insertHardQuestion, id };
+    const hardQuestion: HardQuestion = { 
+      ...insertHardQuestion, 
+      id,
+      solution: insertHardQuestion.solution || null 
+    };
     this.hardQuestionsMap.set(id, hardQuestion);
     return hardQuestion;
   }
 }
 
-export const storage = new MemStorage();
+// Database storage implementation using PostgreSQL
+export class DatabaseStorage implements IStorage {
+  constructor() {
+    // Seed initial data if needed
+    this.seedDataIfNeeded();
+  }
+
+  private async seedDataIfNeeded() {
+    // Check if subjects already exist
+    const existingSubjects = await db.select().from(subjects);
+    
+    if (existingSubjects.length === 0) {
+      // Seed subjects
+      const subjectsData = [
+        { name: "Chemistry", icon: "flask-conical", color: "blue" },
+        { name: "Biology", icon: "flask", color: "green" },
+        { name: "Physics", icon: "zap", color: "yellow" },
+        { name: "Additional Mathematics", icon: "calculator", color: "pink" },
+        { name: "Extended Mathematics", icon: "plus-square", color: "purple" },
+        { name: "French", icon: "languages", color: "orange" },
+        { name: "Economics", icon: "trending-up", color: "blue" },
+        { name: "English Language", icon: "book-open", color: "green" },
+        { name: "Computer Science", icon: "laptop-code", color: "yellow" }
+      ];
+      
+      for (const subject of subjectsData) {
+        await db.insert(subjects).values(subject);
+      }
+    }
+  }
+
+  async getUser(id: number): Promise<User | undefined> {
+    const result = await db.select().from(users).where(eq(users.id, id));
+    return result[0];
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    const result = await db.select().from(users).where(eq(users.username, username));
+    return result[0];
+  }
+
+  async createUser(insertUser: InsertUser): Promise<User> {
+    const result = await db.insert(users).values(insertUser).returning();
+    return result[0];
+  }
+
+  async getSubject(id: number): Promise<Subject | undefined> {
+    const result = await db.select().from(subjects).where(eq(subjects.id, id));
+    return result[0];
+  }
+
+  async getAllSubjects(): Promise<Subject[]> {
+    return await db.select().from(subjects);
+  }
+
+  async createSubject(insertSubject: InsertSubject): Promise<Subject> {
+    const result = await db.insert(subjects).values(insertSubject).returning();
+    return result[0];
+  }
+
+  async getResource(id: number): Promise<Resource | undefined> {
+    const result = await db.select().from(resources).where(eq(resources.id, id));
+    return result[0];
+  }
+
+  async getAllResources(): Promise<Resource[]> {
+    return await db.select().from(resources);
+  }
+
+  async getResourcesBySubject(subjectId: number): Promise<Resource[]> {
+    return await db.select().from(resources).where(eq(resources.subjectId, subjectId));
+  }
+
+  async createResource(insertResource: InsertResource): Promise<Resource> {
+    // Make sure description is not undefined
+    const resourceToInsert = {
+      ...insertResource,
+      description: insertResource.description || null
+    };
+    
+    const result = await db.insert(resources).values(resourceToInsert).returning();
+    return result[0];
+  }
+
+  async getLastMinuteTip(id: number): Promise<LastMinuteTip | undefined> {
+    const result = await db.select().from(lastMinuteTips).where(eq(lastMinuteTips.id, id));
+    return result[0];
+  }
+
+  async getAllLastMinuteTips(): Promise<LastMinuteTip[]> {
+    return await db.select().from(lastMinuteTips);
+  }
+
+  async getLastMinuteTipsBySubject(subjectId: number): Promise<LastMinuteTip[]> {
+    return await db.select().from(lastMinuteTips).where(eq(lastMinuteTips.subjectId, subjectId));
+  }
+
+  async createLastMinuteTip(insertLastMinuteTip: InsertLastMinuteTip): Promise<LastMinuteTip> {
+    const result = await db.insert(lastMinuteTips).values(insertLastMinuteTip).returning();
+    return result[0];
+  }
+
+  async getHardQuestion(id: number): Promise<HardQuestion | undefined> {
+    const result = await db.select().from(hardQuestions).where(eq(hardQuestions.id, id));
+    return result[0];
+  }
+
+  async getAllHardQuestions(): Promise<HardQuestion[]> {
+    return await db.select().from(hardQuestions);
+  }
+
+  async getHardQuestionsBySubject(subjectId: number): Promise<HardQuestion[]> {
+    return await db.select().from(hardQuestions).where(eq(hardQuestions.subjectId, subjectId));
+  }
+
+  async createHardQuestion(insertHardQuestion: InsertHardQuestion): Promise<HardQuestion> {
+    // Make sure solution is not undefined
+    const questionToInsert = {
+      ...insertHardQuestion,
+      solution: insertHardQuestion.solution || null
+    };
+    
+    const result = await db.insert(hardQuestions).values(questionToInsert).returning();
+    return result[0];
+  }
+}
+
+export const storage = new DatabaseStorage();
