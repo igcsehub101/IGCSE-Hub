@@ -26,7 +26,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <a className="text-gray-800 font-bold text-2xl md:text-3xl">
-            Study Resources Hub
+            IGCSE Hub
           </a>
         </Link>
         

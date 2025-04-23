@@ -22,7 +22,7 @@ const HardQuestions = () => {
       title: "Equilibrium Calculations",
       description: "A common challenging topic in advanced chemistry.",
       question: "For the reaction N₂(g) + 3H₂(g) ⇌ 2NH₃(g), Kc = 4.2 × 10⁻¹ at 400°C. Calculate the equilibrium concentrations...",
-      downloadUrl: "#chemistry-hard-questions",
+      downloadUrl: "https://drive.google.com/drive/folders/172MYjdLIMvpE6F4pKySAieo2m4o5494f?usp=drive_link",
     },
     {
       subject: "Physics",
