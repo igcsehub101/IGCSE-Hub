@@ -75,7 +75,7 @@ const Biology = () => {
           <CardContent className="space-y-4">
             <p>Resources for the extended theory paper.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-green-600 hover:underline">Paper 4 Past Paper Solutions</a></li>
+              <li><a href="https://drive.google.com/drive/u/4/folders/1nCEUmEgg0RIFWboI0i1NcOSB9rBCcvQt" className="text-green-600 hover:underline">Paper 4 Past Paper Solutions</a></li>
               <li><a href="#" className="text-green-600 hover:underline">Long Answer Question Templates</a></li>
               <li><a href="#" className="text-green-600 hover:underline">Diagram Drawing Guidelines</a></li>
             </ul>
