@@ -57,12 +57,16 @@ export type Resource = typeof resources.$inferSelect;
 export const lastMinuteTips = pgTable("last_minute_tips", {
   id: serial("id").primaryKey(),
   subjectId: integer("subject_id").notNull(),
+  title: text("title").notNull(),
   content: text("content").notNull(),
+  type: text("type").notNull().default("text"),
 });
 
 export const insertLastMinuteTipSchema = createInsertSchema(lastMinuteTips).pick({
   subjectId: true,
+  title: true,
   content: true,
+  type: true,
 });
 
 export type InsertLastMinuteTip = z.infer<typeof insertLastMinuteTipSchema>;

@@ -75,10 +75,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.post("/api/last-minute-tips", async (req: Request, res: Response) => {
     try {
-      const { subjectId, content } = req.body;
+      const { subjectId, title, content, type } = req.body;
       const tip = await storage.createLastMinuteTip({
         subjectId,
-        content
+        title,
+        content,
+        type
       });
       res.status(201).json(tip);
     } catch (error) {

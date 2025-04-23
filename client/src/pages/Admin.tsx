@@ -34,7 +34,9 @@ const Admin = () => {
   
   const [tipForm, setTipForm] = useState({
     subjectId: "",
-    content: ""
+    title: "",
+    content: "",
+    type: "text"
   });
   
   const [questionForm, setQuestionForm] = useState({
@@ -103,7 +105,9 @@ const Admin = () => {
         },
         body: JSON.stringify({
           subjectId: parseInt(tipForm.subjectId),
-          content: tipForm.content
+          title: tipForm.title,
+          content: tipForm.content,
+          type: tipForm.type
         }),
       });
       
@@ -115,7 +119,9 @@ const Admin = () => {
       // Reset form
       setTipForm({
         subjectId: "",
-        content: ""
+        title: "",
+        content: "",
+        type: "text"
       });
     } catch (error) {
       toast({
@@ -288,6 +294,35 @@ const Admin = () => {
                             {subject.name}
                           </SelectItem>
                         ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="tip-title">Title</Label>
+                    <Input 
+                      id="tip-title" 
+                      value={tipForm.title}
+                      onChange={(e) => setTipForm({...tipForm, title: e.target.value})}
+                      placeholder="e.g., Organic Chemistry Mnemonic"
+                      required
+                    />
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="tip-type">Tip Type</Label>
+                    <Select 
+                      value={tipForm.type} 
+                      onValueChange={(value) => setTipForm({...tipForm, type: value})}
+                    >
+                      <SelectTrigger id="tip-type">
+                        <SelectValue placeholder="Select tip type" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="text">Text</SelectItem>
+                        <SelectItem value="formula">Formula</SelectItem>
+                        <SelectItem value="mnemonic">Mnemonic</SelectItem>
+                        <SelectItem value="diagram">Diagram</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
