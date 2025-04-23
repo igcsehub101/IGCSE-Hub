@@ -39,6 +39,20 @@ const Home = () => {
             path="/hard-questions"
           />
         </div>
+
+        <div className="mt-24 max-w-4xl mx-auto text-center">
+          <h2 className="font-bold text-2xl md:text-3xl mb-6">About Us</h2>
+          <div className="bg-white rounded-lg shadow-md p-8">
+            <p className="text-gray-600 mb-6">
+              IGCSE Hub is a student-driven platform dedicated to helping IGCSE students excel in their studies. 
+              Our mission is to provide comprehensive, accessible, and high-quality study resources across all subjects.
+            </p>
+            <p className="text-gray-600">
+              Created by students for students, we understand the challenges of IGCSE preparation 
+              and strive to make your learning journey smoother and more effective.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
