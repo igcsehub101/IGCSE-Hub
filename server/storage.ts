@@ -164,7 +164,11 @@ export class MemStorage implements IStorage {
   
   async createLastMinuteTip(insertLastMinuteTip: InsertLastMinuteTip): Promise<LastMinuteTip> {
     const id = this.currentId.lastMinuteTips++;
-    const lastMinuteTip: LastMinuteTip = { ...insertLastMinuteTip, id };
+    const lastMinuteTip: LastMinuteTip = { 
+      ...insertLastMinuteTip, 
+      id,
+      type: insertLastMinuteTip.type || "text"
+    };
     this.lastMinuteTipsMap.set(id, lastMinuteTip);
     return lastMinuteTip;
   }
@@ -294,7 +298,13 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createLastMinuteTip(insertLastMinuteTip: InsertLastMinuteTip): Promise<LastMinuteTip> {
-    const result = await db.insert(lastMinuteTips).values(insertLastMinuteTip).returning();
+    // Make sure type has a default value if not provided
+    const tipToInsert = {
+      ...insertLastMinuteTip,
+      type: insertLastMinuteTip.type || "text"
+    };
+    
+    const result = await db.insert(lastMinuteTips).values(tipToInsert).returning();
     return result[0];
   }
 
