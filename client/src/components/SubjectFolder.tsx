@@ -1,26 +1,70 @@
-import { LucideIcon } from "lucide-react";
-import { Card } from "./ui/card";
 import { Link } from "wouter";
+import { LucideIcon } from "lucide-react";
 
 interface SubjectFolderProps {
   title: string;
   icon: LucideIcon;
-  color: string;
+  color: "red" | "blue" | "pink" | "yellow" | "green" | "purple" | "orange";
   path: string;
+  links?: { label: string; url: string }[];
 }
 
-const SubjectFolder = ({ title, icon: Icon, color, path }: SubjectFolderProps) => {
+const SubjectFolder = ({
+  title,
+  icon: Icon,
+  color,
+  path,
+  links,
+}: SubjectFolderProps) => {
+  const getColorClass = (color: string) => {
+    const colorMap = {
+      red: "bg-[hsl(var(--pastel-red))]",
+      blue: "bg-[hsl(var(--pastel-blue))]",
+      pink: "bg-[hsl(var(--pastel-pink))]",
+      yellow: "bg-[hsl(var(--pastel-yellow))]",
+      green: "bg-[hsl(var(--pastel-green))]",
+      purple: "bg-[hsl(var(--pastel-purple))]",
+      orange: "bg-[hsl(var(--pastel-orange))]",
+    };
+    
+    return colorMap[color as keyof typeof colorMap] || "bg-[hsl(var(--pastel-blue))]";
+  };
+  
+  const getIconColorClass = (color: string) => {
+    const colorMap = {
+      red: "text-red-700",
+      blue: "text-blue-700",
+      pink: "text-pink-700",
+      yellow: "text-yellow-700",
+      green: "text-green-700",
+      purple: "text-purple-700",
+      orange: "text-orange-700",
+    };
+    
+    return colorMap[color as keyof typeof colorMap] || "text-blue-700";
+  };
+
   return (
-    <Link href={path}>
-      <Card className="p-4 cursor-pointer hover:shadow-lg transition-shadow">
-        <div className="flex flex-col items-center gap-2">
-          <div className={`p-2 rounded-full bg-${color}-100`}>
-            <Icon className={`h-6 w-6 text-${color}-700`} />
+    <div className="mini-folder">
+      <Link href={path}>
+        <div className={`cursor-pointer ${getColorClass(color)} p-4 rounded-lg shadow-md text-center h-full flex flex-col`}>
+          <Icon className={`h-10 w-10 mx-auto mb-3 ${getIconColorClass(color)}`} />
+          <h3 className="font-semibold mb-2">{title}</h3>
+          <div className="mt-auto">
+            {links && links.map((link, index) => (
+              <Link key={index} href={link.url}>
+                <a className="text-sm text-blue-600 hover:text-blue-800 block mb-1 last:mb-0">
+                  {link.label}
+                </a>
+              </Link>
+            ))}
+            {!links && (
+              <span className="text-sm text-gray-600">View resources</span>
+            )}
           </div>
-          <span className={`text-${color}-700 font-medium text-center`}>{title}</span>
         </div>
-      </Card>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
