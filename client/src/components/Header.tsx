@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu } from "lucide-react";
+import { Menu, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -17,6 +17,9 @@ const Header = () => {
     { name: "Resources", path: "/resources" },
     { name: "Hard Questions", path: "/hard-questions" },
   ];
+  
+  // Admin link - separate from main navigation
+  const adminLink = { name: "Admin", path: "/admin", icon: Settings };
 
   return (
     <header className="gradient-header p-4 shadow-md">
@@ -28,7 +31,7 @@ const Header = () => {
         </Link>
         
         <nav className="hidden md:block">
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-6 items-center">
             {navLinks.map((link) => (
               <li key={link.path}>
                 <Link href={link.path}>
@@ -38,6 +41,14 @@ const Header = () => {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href={adminLink.path}>
+                <a className={`flex items-center text-gray-700 hover:text-gray-900 ${location === adminLink.path ? 'font-semibold' : ''}`}>
+                  <adminLink.icon className="h-4 w-4 mr-1" />
+                  {adminLink.name}
+                </a>
+              </Link>
+            </li>
           </ul>
         </nav>
         
@@ -69,6 +80,20 @@ const Header = () => {
                 </Link>
               </li>
             ))}
+            {/* Admin link in mobile menu */}
+            <li>
+              <Link href={adminLink.path}>
+                <a 
+                  className={`flex items-center text-gray-700 hover:text-gray-900 ${
+                    location === adminLink.path ? 'font-semibold' : ''
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <adminLink.icon className="h-4 w-4 mr-1" />
+                  {adminLink.name}
+                </a>
+              </Link>
+            </li>
           </ul>
         </div>
       )}

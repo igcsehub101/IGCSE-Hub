@@ -95,7 +95,8 @@ const Admin = () => {
   const handleTipSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await apiRequest("/api/last-minute-tips", {
+      await apiRequest({
+        url: "/api/last-minute-tips",
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -104,7 +105,7 @@ const Admin = () => {
           subjectId: parseInt(tipForm.subjectId),
           content: tipForm.content
         }),
-      } as RequestInit);
+      });
       
       toast({
         title: "Success!",
@@ -129,7 +130,8 @@ const Admin = () => {
   const handleQuestionSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await apiRequest("/api/hard-questions", {
+      await apiRequest({
+        url: "/api/hard-questions",
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -141,7 +143,7 @@ const Admin = () => {
           solution: questionForm.solution,
           difficulty: parseInt(questionForm.difficulty)
         }),
-      } as RequestInit);
+      });
       
       toast({
         title: "Success!",
