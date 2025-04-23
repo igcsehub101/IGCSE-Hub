@@ -132,14 +132,6 @@ const HardQuestions = () => {
             />
           ))}
         </div>
-
-        <div className="text-center mt-8">
-          <Button 
-            className="bg-[hsl(var(--pastel-pink))] hover:bg-pink-200 text-gray-800 font-semibold py-2 px-6 rounded-full shadow-md transition-colors"
-          >
-            View All Hard Questions Collections
-          </Button>
-        </div>
       </div>
     </section>
   );
