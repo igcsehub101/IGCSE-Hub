@@ -75,7 +75,7 @@ const Resources = () => {
       title: "Study Tools",
       icon: Wrench,
       color: "pink",
-      path: "#study-tools",
+      path: "/study-tools",
     },
   ];
 
