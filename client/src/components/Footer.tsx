@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">Study Resources Hub</h3>
+            <h3 className="font-bold text-lg mb-4">IGCSE Resources Hub</h3>
             <p className="text-gray-400">
               Your one-stop resource center for exam preparation and study materials.
             </p>
@@ -42,15 +42,15 @@ const Footer = () => {
               Have suggestions for resources? Let us know!
             </p>
             <a
-              href="mailto:contact@studyresourceshub.com"
+              href="mailto:igcsehub101@gmail.com"
               className="text-blue-300 hover:text-white"
             >
-              contact@studyresourceshub.com
+              igcsehub101@gmail.com
             </a>
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-gray-700 text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Study Resources Hub. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} IGCSE Hub. All rights reserved.</p>
         </div>
       </div>
     </footer>
