@@ -8,10 +8,10 @@ const LastMinuteTips = () => {
     {
       name: "Science",
       keyTopics: [
-        "Periodic Table & Trends",
-        "Mole Calculations",
-        "Chemical Bonding",
-        "Reaction Rates & Equilibrium",
+        "General advice (exam prep)",
+        "Review important notes ",
+        "Use our checklist to ensure you have covered all the topics in the syllabus",
+        "Review the hard questions",
       ],
       quickInfo: [
         "n = mass/Mr",
