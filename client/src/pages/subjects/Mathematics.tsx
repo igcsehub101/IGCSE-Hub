@@ -28,7 +28,7 @@ const Mathematics = () => {
           <CardContent className="space-y-4">
             <p>Essential formulas and equations for IGCSE Additional/Extended Mathematics.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-pink-600 hover:underline">Algebraic Formulas</a></li>
+              <li><a href="" className="text-pink-600 hover:underline">Algebraic Formulas</a></li>
               <li><a href="#" className="text-pink-600 hover:underline">Trigonometric Identities</a></li>
               <li><a href="#" className="text-pink-600 hover:underline">Coordinate Geometry Equations</a></li>
               <li><a href="#" className="text-pink-600 hover:underline">Calculus Formulas</a></li>

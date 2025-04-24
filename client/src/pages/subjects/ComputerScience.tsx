@@ -47,12 +47,10 @@ const ComputerScience = () => {
           <CardContent className="space-y-4">
             <p>Comprehensive resources for programming concepts and practice for IGCSE Computer Science.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="https://drive.google.com/drive/u/4/folders/1aU3YMtOmvcuDBcetG5wSMSmVjMH2gRjO" className="text-yellow-600 hover:underline">Common Past paper questions</a></li>
+              <li><a href="https://drive.google.com/file/d/1yhfZwQA1m6FsSXWS-kQMJtAxlfA-MEW2/view?usp=drive_link" className="text-yellow-600 hover:underline">Common Past paper questions</a></li>
               <li><a href="https://drive.google.com/file/d/1FP-_boMAtLBRxffwhxDVazzE1ccx2HtT/view?usp=drive_link" className="text-yellow-600 hover:underline">Pseudocode Guide</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Trace Table Examples</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Pseudocode Practice</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Logic Gates and Boolean Algebra</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Flowchart Design Principles</a></li>
+              <li><a href="https://drive.google.com/file/d/1YUOrUmFQ1Vx2JFuw4XkdmujBJFun2w9_/view?usp=drive_link" className="text-yellow-600 hover:underline">Pseudocode Rules from the syllabus</a></li>
+              <li><a href="https://drive.google.com/file/d/1p8_zQbPFMQSyAqwD7nSJhYsyaAnbAqEr/view?usp=sharing" className="text-yellow-600 hover:underline">Quick Revision Notes</a></li>
             </ul>
           </CardContent>
         </Card>
