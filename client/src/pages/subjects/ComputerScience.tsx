@@ -56,23 +56,6 @@ const ComputerScience = () => {
             </ul>
           </CardContent>
         </Card>
-
-        {/* Pseudocode Rules */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl text-yellow-700">Pseudocode Rules</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p>Official pseudocode syntax and rules from the IGCSE syllabus.</p>
-            <div className="w-full h-[600px] border border-gray-200 rounded-lg overflow-hidden">
-              <iframe 
-                src="/attached_assets/pseudocode%20rules%20from%20the%20syllabus.pdf"
-                className="w-full h-full"
-                title="Pseudocode Rules PDF"
-              />
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
