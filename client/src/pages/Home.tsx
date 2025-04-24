@@ -9,7 +9,16 @@ const Home = () => {
   return (
     <section className="py-12 px-4">
       <div className="container mx-auto text-center">
-        <h1 className="font-bold text-3xl md:text-4xl mb-6">Your One-Stop Resource Center</h1>
+        <h1 
+          className="font-bold text-3xl md:text-4xl mb-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:text-pink-600"
+          onClick={() => {
+            const el = document.querySelector('h1');
+            el?.classList.add('animate-bounce');
+            setTimeout(() => el?.classList.remove('animate-bounce'), 1000);
+          }}
+        >
+          Your One-Stop Resource Center
+        </h1>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
           Access past papers, revision guides, mark schemes, and helpful resources for all your exam preparation needs.
         </p>
