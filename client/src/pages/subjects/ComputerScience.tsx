@@ -20,34 +20,35 @@ const ComputerScience = () => {
         
         <Separator className="my-6" />
         
-        {/* 15 Markers */}
+        {/* Paper 1 */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-xl text-yellow-700">15 Markers</CardTitle>
+            <CardTitle className="text-xl text-yellow-700"> Paper 1 </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p>Preparation and strategies for the extended response questions worth 15 marks.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-yellow-600 hover:underline">Networks and Security</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">System Architecture</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Data Representation</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Databases and SQL</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Ethics and Legal Issues</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Algorithm Design and Efficiency</a></li>
+              <li><a href="https://drive.google.com/file/d/1XUslLgcUOASz--O86gZxoouYSEHZUh4H/view?usp=drive_link" className="text-yellow-600 hover:underline"> Revision Notes </a></li>
+               </ul>
+              <ul className="list-disc pl-5 space-y-1">
+              <h4 className="font-semibold mt-6 mb-3">Mark schemes to review key terms</h4>
+  
+              <li><a href="https://drive.google.com/file/d/1yMGrHGhQDtq0RkD0hrgNF0ovTxCsmi5W/view?usp=drive_link" className="text-yellow-600 hover:underline"> Internet and its Uses</a></li>
+                
+              <li><a href="https://drive.google.com/file/d/1XUslLgcUOASz--O86gZxoouYSEHZUh4H/view?usp=drive_link" className="text-yellow-600 hover:underline"> All Topics </a></li>
             </ul>
           </CardContent>
         </Card>
         
-        {/* Programming Guide */}
+        {/* Paper 2 */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-xl text-yellow-700">Programming Guide</CardTitle>
+            <CardTitle className="text-xl text-yellow-700">Paper 2</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <p>Comprehensive resources for programming concepts and practice for IGCSE Computer Science.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-yellow-600 hover:underline">Python Syntax Reference</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Common Programming Algorithms</a></li>
+              <li><a href="https://drive.google.com/drive/u/4/folders/1aU3YMtOmvcuDBcetG5wSMSmVjMH2gRjO" className="text-yellow-600 hover:underline">Common Past paper questions</a></li>
+              <li><a href="https://drive.google.com/file/d/1FP-_boMAtLBRxffwhxDVazzE1ccx2HtT/view?usp=drive_link" className="text-yellow-600 hover:underline">Pseudocode Guide</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Trace Table Examples</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Pseudocode Practice</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Logic Gates and Boolean Algebra</a></li>

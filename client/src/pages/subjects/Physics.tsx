@@ -31,7 +31,7 @@ const Physics = () => {
             <p>Essential formulas and equations for IGCSE Physics.</p>
             <ul className="list-disc pl-5 space-y-2">
               <li><a href="https://drive.google.com/file/d/14H4rKB97OnYivoKQdP7f1A80bMcffX9B/view?usp=drive_link" className="text-yellow-600 hover:underline">Formulas and Defenitions</a></li>
-              <li><a href="https://quizlet.com/ie/21328279/igcse-physics-formula-flash-cards/" className="text-yellow-600 hover:underline"> Essential Formulas Flashcards</a></li>
+              <li><a href="https://quizlet.com/ie/21328279/igcse-physics-formula-flash-cards/" className="text-yellow-600 hover:underline"> Essential Formulas Flashcards (Quizlet)</a></li>
           
             </ul>
           </CardContent>
@@ -45,9 +45,9 @@ const Physics = () => {
           <CardContent className="space-y-4">
             <p>Resources for the multiple-choice paper.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-yellow-600 hover:underline">Paper 2 Practice Questions</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Multiple Choice Strategies</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Common Calculation Errors</a></li>
+              <li><a href="https://drive.google.com/drive/folders/1kaN6-TjwTb3OfiRRMwHnotn2u63OZofl" className="text-yellow-600 hover:underline">Hardest Year- Wise MCQS by Fruitadella </a></li>
+              <li><a href="https://drive.google.com/file/d/1GKi1djSkiz3r4kk9T0DDAze9dRzLjEON/view?usp=drive_link" className="text-yellow-600 hover:underline">Other Hard MCQS With Explanations</a></li>
+        
               
             </ul>
           </CardContent>
@@ -63,7 +63,7 @@ const Physics = () => {
             <ul className="list-disc pl-5 space-y-2">
               <li><a href="https://drive.google.com/file/d/143ZsBUhmQML5n2Eqk1tAM652aCAwAXQv/view" className="text-yellow-600 hover:underline">Theory Notes by Vasumitra Ghajbiye  </a></li>
               <li><a href="https://drive.google.com/file/d/14LZszUbbS19q5_LbxP_E7WqoXAedoKe4/view" className="text-yellow-600 hover:underline">Defenitions by Vasumitra Ghajbiye</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Explanation Templates</a></li>
+              <li><a href="https://drive.google.com/file/d/143SXTN_iOzXrX3uaJAkf7DVtmVj0hI3o/view" className="text-yellow-600 hover:underline">Common Past Paper Questions by Vasumitra Ghajbiye</a></li>
             </ul>
             
             <h4 className="font-semibold mt-6 mb-3">Topical Questions</h4>
