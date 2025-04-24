@@ -6,7 +6,7 @@ import { FileText } from "lucide-react";
 const LastMinuteTips = () => {
   const subjects = [
     {
-      name: "Chemistry",
+      name: "Science",
       keyTopics: [
         "Periodic Table & Trends",
         "Mole Calculations",
@@ -19,71 +19,7 @@ const LastMinuteTips = () => {
         "Percentage Yield = (actual/theoretical) × 100%",
       ],
       infoTitle: "Quick Formulas:",
-      downloadUrl: "#chemistry-quick-guide",
-    },
-    {
-      name: "Biology",
-      keyTopics: [
-        "Cell Structure & Function",
-        "DNA Replication & Protein Synthesis",
-        "Photosynthesis & Respiration",
-        "Human Physiology",
-      ],
-      quickInfo: [
-        "Confusing mitosis and meiosis stages",
-        "Mixing up active and passive transport",
-        "Forgetting enzyme mechanisms",
-      ],
-      infoTitle: "Common Mistakes:",
-      downloadUrl: "#biology-quick-guide",
-    },
-    {
-      name: "Physics",
-      keyTopics: [
-        "F = ma",
-        "E = mc²",
-        "v = u + at",
-        "P = VI",
-      ],
-      quickInfo: [
-        "Circuit diagrams and calculations",
-        "Motion graphs interpretation",
-        "Energy transformations",
-      ],
-      infoTitle: "Common Exam Questions:",
-      downloadUrl: "#physics-formula-sheet",
-    },
-    {
-      name: "Additional Mathematics",
-      keyTopics: [
-        "Differentiation & Integration",
-        "Trigonometric Identities",
-        "Logarithms & Exponentials",
-        "Vectors & Matrices",
-      ],
-      quickInfo: [
-        "Show all working clearly",
-        "Check units in final answers",
-        "Memorize key derivative and integral formulas",
-      ],
-      infoTitle: "Exam Tips:",
-      downloadUrl: "#math-formula-sheet",
-    },
-    {
-      name: "Extended Mathematics",
-      keyTopics: [
-        "Quadratics and Polynomials",
-        "Sequences and Series",
-        "Coordinate Geometry",
-        "Statistical Methods",
-      ],
-      quickInfo: [
-        "Read the question twice",
-        "Use graphs where possible",
-        "Practice with past paper questions",
-      ],
-      infoTitle: "Exam Strategies:",
-      downloadUrl: "#extended-math-guide",
+      downloadUrl: "#science-quick-guide",
     },
     {
       name: "French",
