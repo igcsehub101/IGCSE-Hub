@@ -79,6 +79,15 @@ const Physics = () => {
               <li><a href="#" className="text-yellow-600 hover:underline">Problem-Solving Techniques</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Explanation Templates</a></li>
             </ul>
+            
+            <h4 className="font-semibold mt-6 mb-3">Topical Resources</h4>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><a href="#" className="text-yellow-600 hover:underline">Forces and Motion</a></li>
+              <li><a href="#" className="text-yellow-600 hover:underline">Electricity and Magnetism</a></li>
+              <li><a href="#" className="text-yellow-600 hover:underline">Waves and Light</a></li>
+              <li><a href="#" className="text-yellow-600 hover:underline">Nuclear Physics</a></li>
+              <li><a href="#" className="text-yellow-600 hover:underline">Thermal Physics</a></li>
+            </ul>
           </CardContent>
         </Card>
         
