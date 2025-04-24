@@ -20,21 +20,7 @@ const Physics = () => {
         
         <Separator className="my-6" />
         
-        {/* Flashcards */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl text-yellow-700">Flashcards</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p>Use these flashcards to memorize key physics concepts, formulas, and principles.</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><a href="https://quizlet.com/ie/21328279/igcse-physics-formula-flash-cards/" className="text-yellow-600 hover:underline"> Definitions</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Electricity and Magnetism</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Waves and Optics</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Thermal Physics</a></li>
-            </ul>
-          </CardContent>
-        </Card>
+        
         
         {/* Formula Sheet */}
         <Card className="mb-8">

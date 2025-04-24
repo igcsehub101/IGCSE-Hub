@@ -20,21 +20,7 @@ const Biology = () => {
         
         <Separator className="my-6" />
         
-        {/* Flashcards */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl text-green-700">Flashcards</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p>Use these flashcards to memorize key biology concepts, terms, and processes.</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-green-600 hover:underline">Cell Structure and Function</a></li>
-              <li><a href="#" className="text-green-600 hover:underline">Transport Systems in Plants and Animals</a></li>
-              <li><a href="#" className="text-green-600 hover:underline">Hormones and Homeostasis</a></li>
-              <li><a href="#" className="text-green-600 hover:underline">Classification and Evolution</a></li>
-            </ul>
-          </CardContent>
-        </Card>
+        
         
         {/* Formula Sheet */}
         <Card className="mb-8">

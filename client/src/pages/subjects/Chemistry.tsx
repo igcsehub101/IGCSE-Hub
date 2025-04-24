@@ -20,21 +20,7 @@ const Chemistry = () => {
         
         <Separator className="my-6" />
         
-        {/* Flashcards */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl text-blue-700">Flashcards</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p>Use these flashcards to memorize key chemistry concepts, formulas, and reactions.</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-blue-600 hover:underline">Periodic Table Elements and Properties</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Chemical Bonding Concepts</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Organic Chemistry Reactions</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Rates of Reaction Factors</a></li>
-            </ul>
-          </CardContent>
-        </Card>
+        
         
         {/* Formula Sheet */}
         <Card className="mb-8">
