@@ -28,7 +28,7 @@ const Physics = () => {
           <CardContent className="space-y-4">
             <p>Use these flashcards to memorize key physics concepts, formulas, and principles.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-yellow-600 hover:underline">Mechanics and Motion</a></li>
+              <li><a href="https://quizlet.com/ie/21328279/igcse-physics-formula-flash-cards/" className="text-yellow-600 hover:underline"> Definitions</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Electricity and Magnetism</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Waves and Optics</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Thermal Physics</a></li>
@@ -44,10 +44,9 @@ const Physics = () => {
           <CardContent className="space-y-4">
             <p>Essential formulas and equations for IGCSE Physics.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-yellow-600 hover:underline">Kinematics Equations</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Electrical Circuit Formulas</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Wave Properties and Calculations</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Energy Conversion Equations</a></li>
+              <li><a href="https://drive.google.com/file/d/14H4rKB97OnYivoKQdP7f1A80bMcffX9B/view?usp=drive_link" className="text-yellow-600 hover:underline">Formulas and Defenitions</a></li>
+              <li><a href="https://quizlet.com/ie/21328279/igcse-physics-formula-flash-cards/" className="text-yellow-600 hover:underline"> Essential Formulas Flashcards</a></li>
+          
             </ul>
           </CardContent>
         </Card>
@@ -63,6 +62,7 @@ const Physics = () => {
               <li><a href="#" className="text-yellow-600 hover:underline">Paper 2 Practice Questions</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Multiple Choice Strategies</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Common Calculation Errors</a></li>
+              
             </ul>
           </CardContent>
         </Card>
@@ -75,8 +75,8 @@ const Physics = () => {
           <CardContent className="space-y-4">
             <p>Resources for the extended theory paper.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-yellow-600 hover:underline">Paper 4 Past Paper Solutions</a></li>
-              <li><a href="#" className="text-yellow-600 hover:underline">Problem-Solving Techniques</a></li>
+              <li><a href="https://drive.google.com/file/d/143ZsBUhmQML5n2Eqk1tAM652aCAwAXQv/view" className="text-yellow-600 hover:underline">Theory Notes by Vasumitra Ghajbiye  </a></li>
+              <li><a href="https://drive.google.com/file/d/14LZszUbbS19q5_LbxP_E7WqoXAedoKe4/view" className="text-yellow-600 hover:underline">Defenitions by Vasumitra Ghajbiye</a></li>
               <li><a href="#" className="text-yellow-600 hover:underline">Explanation Templates</a></li>
             </ul>
             
