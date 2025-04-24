@@ -1,0 +1,187 @@
+
+Pseudocode Rules from the Cambridge IGCSE Computer Science Syllabus
+
+General Style:
+- Font: Courier New
+- Indentation: 4 spaces for code blocks, 2 spaces for line continuations
+- THEN and ELSE clauses: indented by 2 spaces
+- Keywords: UPPER CASE (e.g., IF, REPEAT)
+- Identifiers: PascalCase (e.g., NumberOfPlayers)
+- Meta-variables: enclosed in < >
+
+Example:
+REPEAT
+    <Statements>
+UNTIL <Condition>
+
+Comments:
+- Use // for comments
+
+Example:
+// This procedure swaps
+// values of X and Y
+PROCEDURE SWAP(X : INTEGER, Y : INTEGER)
+    Temp ← X    // temporarily store X
+    X ← Y
+    Y ← Temp
+ENDPROCEDURE
+
+Data Types:
+- INTEGER, REAL, CHAR, STRING, BOOLEAN
+
+Literals:
+- Integer: 5, -3
+- Real: 4.7, 0.3, -4.0, 0.0
+- Char: 'x'
+- String: "hello"
+- Boolean: TRUE, FALSE
+
+Identifiers:
+- Must start with a capital letter and contain only letters and digits
+
+Variable Declarations:
+DECLARE Counter : INTEGER
+DECLARE TotalToPay : REAL
+DECLARE GameOver : BOOLEAN
+
+Constants:
+CONSTANT HourlyRate ← 6.50
+CONSTANT DefaultText ← "N/A"
+
+Assignments:
+Counter ← 0
+Counter ← Counter + 1
+TotalToPay ← NumberOfHours * HourlyRate
+
+Arrays:
+DECLARE StudentNames : ARRAY[1:30] OF STRING
+DECLARE NoughtsAndCrosses : ARRAY[1:3, 1:3] OF CHAR
+StudentNames[1] ← "Ali"
+NoughtsAndCrosses[2,3] ← 'X'
+StudentNames[n+1] ← StudentNames[n]
+
+Loop assignment:
+FOR Index ← 1 TO 30
+    StudentNames[Index] ← ""
+NEXT Index
+
+Input and Output:
+INPUT Answer
+OUTPUT Score
+OUTPUT "You have ", Lives, " lives left"
+
+Arithmetic Operations:
+Answer ← Score * 100 / MaxMark
+Answer ← Pi * Radius ^ 2
+
+MOD and DIV:
+DIV(10, 3) returns 3
+MOD(10, 3) returns 1
+
+Logical Operators:
+=, <, >, <=, >=, <>
+
+Boolean Operators:
+AND, OR, NOT
+
+Example:
+IF Answer < 0 OR Answer > 100 THEN
+    Correct ← FALSE
+ELSE
+    Correct ← TRUE
+ENDIF
+
+String Operations:
+LENGTH("Happy Days") returns 10
+LCASE('W') returns 'w'
+UCASE("Happy") returns "HAPPY"
+SUBSTRING("Happy Days", 1, 5) returns "Happy"
+
+Library Functions:
+Value ← ROUND(RANDOM() * 6, 0)
+
+IF Statements:
+IF Score > 50 THEN
+    OUTPUT "Pass"
+ELSE
+    OUTPUT "Fail"
+ENDIF
+
+Nested IF:
+IF ChallengerScore > ChampionScore THEN
+    IF ChallengerScore > HighestScore THEN
+        OUTPUT ChallengerName, " is champion and highest scorer"
+    ELSE
+        OUTPUT Player1Name, " is the new champion"
+    ENDIF
+ELSE
+    OUTPUT ChampionName, " is still the champion"
+    IF ChampionScore > HighestScore THEN
+        OUTPUT ChampionName, " is also the highest scorer"
+    ENDIF
+ENDIF
+
+CASE Statement:
+INPUT Move
+CASE OF Move
+    'W' : Position ← Position – 10
+    'E' : Position ← Position + 10
+    'A' : Position ← Position – 1
+    'D' : Position ← Position + 1
+    OTHERWISE OUTPUT "Beep"
+ENDCASE
+
+FOR Loop:
+FOR i ← 1 TO 5
+    OUTPUT i
+NEXT i
+
+Nested FOR:
+Total ← 0
+FOR Row ← 1 TO MaxRow
+    RowTotal ← 0
+    FOR Column ← 1 TO 10
+        RowTotal ← RowTotal + Amount[Row, Column]
+    NEXT Column
+    OUTPUT "Total for Row ", Row, " is ", RowTotal
+    Total ← Total + RowTotal
+NEXT Row
+OUTPUT "The grand total is ", Total
+
+REPEAT Loop:
+REPEAT
+    OUTPUT "Please enter the password"
+    INPUT Password
+UNTIL Password = "Secret"
+
+WHILE Loop:
+WHILE Number > 9 DO
+    Number ← Number – 9
+ENDWHILE
+
+Procedures:
+PROCEDURE DefaultLine
+    CALL LINE(60)
+ENDPROCEDURE
+
+PROCEDURE Line(Size : INTEGER)
+    FOR Length ← 1 TO Size
+        OUTPUT '-'
+    NEXT Length
+ENDPROCEDURE
+
+Functions:
+FUNCTION SumSquare(Number1:INTEGER, Number2:INTEGER) RETURNS INTEGER
+    RETURN Number1 * Number1 + Number2 * Number2
+ENDFUNCTION
+
+OUTPUT "Sum of squares = ", SumSquare(10, 20)
+
+File Handling:
+DECLARE LineOfText : STRING
+OPENFILE FileA.txt FOR READ
+OPENFILE FileB.txt FOR WRITE
+READFILE FileA.txt, LineOfText
+WRITEFILE FileB.txt, LineOfText
+CLOSEFILE FileA.txt
+CLOSEFILE FileB.txt
