@@ -176,23 +176,6 @@ const Physics = () => {
                   </div>
                 </div>
               </details>
-
-              <details className="bg-yellow-50 p-4 rounded-lg">
-                <summary className="font-semibold cursor-pointer">Upload Your Notes</summary>
-                <div className="mt-4">
-                  <input 
-                    type="file" 
-                    accept=".pdf"
-                    className="block w-full text-sm text-gray-500
-                      file:mr-4 file:py-2 file:px-4
-                      file:rounded-full file:border-0
-                      file:text-sm file:font-semibold
-                      file:bg-yellow-50 file:text-yellow-700
-                      hover:file:bg-yellow-100"
-                  />
-                  <p className="text-sm text-gray-500 mt-2">Upload your PDF notes to keep them organized with your other resources.</p>
-                </div>
-              </details>
             </div>
           </CardContent>
         </Card>
