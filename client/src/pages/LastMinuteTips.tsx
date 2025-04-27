@@ -1,4 +1,3 @@
-
 import { Clock } from "lucide-react";
 import { Link } from "wouter";
 import AccordionItem from "@/components/AccordionItem";
@@ -10,108 +9,88 @@ const LastMinuteTips = () => {
       name: "Science",
       sections: [
         {
-          title: "General Advice",
-          content: "Review the hard questions and use our checklist to ensure you have covered all the topics in the syllabus"
+          title: "General Advice (Exam Prep)",
+          content: "• Review important notes\n• Use our checklist to ensure you have covered all the topics in the syllabus\n• Review the hard questions"
         },
         {
           title: "Paper 2",
-          content: "Multiple choice questions strategy"
+          content: "• Review hardest MCQs and method to solve them\n• Go over the syllabus doc\n• Bio - revise the colour of the indicators, important diagrams\n• Chem - revise the cation/anion/gas tests"
         },
         {
           title: "Paper 4",
-          content: "Structured questions approach"
+          content: "• Memorize definitions from the syllabus doc\n• Revise key words required by reviewing mark schemes\n• Practice past papers by timing yourself and marking yourself\n• Make your own formula sheet to ensure you know all the formulas"
         },
         {
           title: "Paper 6",
-          content: "Alternative to Practical skills"
+          content: "Biology:\n• Experiment: independent, dependent and control variable\n• Method\n• Safety precautions\n• Repeat experiment 3 times and find average\n\nDrawing question:\n• Use a sharp HB pencil\n• Draw a clear and similar shape\n• Avoiding shading\n• Draw according to the magnification asked in the paper\n\nLine graph: when say 'passing through points' or 'suitable graph' or 'when there is time as variable'. It can be a straight (best fit line) or smooth curve\n\nPhysics:\n• Experiment: Include all pointers in the question\n• Add the units in the table\n• Additional points:\n  - at least 5 sets of data taken\n  - repeat for each value of independent variable and take average\n\nChemistry:\n• Taking measurements from burette/measuring cylinder - correct to 3 significant figures\n• Underline important information in experiments\n• Always draw a smooth line graph"
         }
       ],
       downloadUrl: "#science-quick-guide",
-    },
-    {
-      name: "French",
-      sections: [
-        {
-          title: "Paper 1",
-          content: "Listening exam strategies and practice"
-        },
-        {
-          title: "Paper 2",
-          content: "Reading and writing examination techniques"
-        },
-        {
-          title: "Paper 3",
-          content: "Speaking test preparation"
-        },
-        {
-          title: "Paper 4",
-          content: "Writing exam guidelines"
-        }
-      ],
-      downloadUrl: "#french-guide",
     },
     {
       name: "Economics",
       sections: [
         {
           title: "Paper 1",
-          content: "Multiple choice questions technique"
+          content: "• Revise the formulas for CPI, PED, PES\n• Go over the graphs:\n  - Supply and demand\n  - PPCs\n  - Currency\n  - Firm graphs (fixed costs, average costs)\n• Time and solve past papers"
         },
         {
           title: "Paper 2",
-          content: "Structured questions approach"
-        },
-        {
-          title: "Time Management",
-          content: "Effective time allocation strategies"
+          content: "Format of answers:\n• 4 markers: 2 knowledge points, 2 analysis points\n• 8 markers structure:\n  - 2 body paragraphs (for and against)\n  - Each paragraph: 3-4 knowledge points, 2-3 analysis points\n\nKey Tips:\n• Read mark schemes of hard questions\n• Revise important notes and keywords/definitions\n• Macroeconomic questions - connect points to macroeconomic aims\n• 6 and 8 markers - take points from every chapter, link to micro and macroeconomics\n• 8 markers - link each point back to the question\n\nTime management: Answer sub-questions in reverse order (8, 6, 4, 2)"
         }
       ],
-      downloadUrl: "#economics-diagram-guide",
+      downloadUrl: "#economics-quick-guide",
     },
     {
-      name: "English Language",
+      name: "French",
       sections: [
         {
           title: "Paper 1",
-          content: `Revise the formats for all of the text types
-
-Format for writers effect answer:
-
-Intro: The overall effect of language used in paragraph ___ is an image of ____
-Body paragraph: Choose words/short phrases that use interesting language. For each word/phrase explain both the implicit and explicit meaning. Identify the part of speech and any other literary devices used. Then describe the effect on the reader and identify the mood/tone created. 
-
-Summary writing:
-Ensure that the summary is no more than 10-15 words over the word limit. Use both simple and complex sentence structures and use transitional phrases in your answer.`
+          content: "• If unsure, write down words or phrases you recognize to return to later"
         },
         {
           title: "Paper 2",
-          content: `Focus on preparing for one text type - narrative or descriptive 
-Structure of a descriptive essay:
-
-Setting/ Atmosphere
-Zoom in
-Zoom in again (describe everything in more detail)
-Zoom out
-Slight change
-- use the 5 senses - all types of imagery(visual, sensory, auditory)`
+          content: "• Read texts from past papers and textbook for practice\n• Underline key words and phrases while reading\n• Matching questions - write requirements for each person in English to find corresponding card"
+        },
+        {
+          title: "Paper 3",
+          content: "• Memorize general words and phrases for each topic\n• Revise vocabulary for common topics:\n  - Education, Transport, Technology\n  - Food, Vacations, Hobbies/Loisirs\n  - Clothes, Festivals, Cultures/Languages\n  - Family, House"
+        },
+        {
+          title: "Paper 4",
+          content: "• Refer to vocabulary in syllabus doc\n• Memorize common introduction for email and blog format\n• Structure: introduction, body paragraph, conclusion\n• Use transition words"
         }
       ],
-      downloadUrl: "#english-writing-guide",
+      downloadUrl: "#french-guide",
     },
     {
       name: "Computer Science",
       sections: [
         {
           title: "Paper 1",
-          content: "Theory of computation and computer systems"
+          content: "• Revise from mark schemes for key terms\n• Practice drawing diagrams:\n  - HTTPS\n  - Cyberattacks\n  - Blockchain\n  - Types of transmission\n• Practice conversions between denary, hexadecimal and binary"
         },
         {
           title: "Paper 2",
-          content: "Problem-solving and programming concepts"
+          content: "15 marker:\n• Write comments as you write code\n• Revise different types of algorithms:\n  - Linear search\n  - Bubble sort\n• Revise loop structures:\n  - For\n  - While\n  - Repeat\n• Revise syntax for pseudocode statements"
         }
       ],
       downloadUrl: "#cs-algorithm-cheat-sheet",
     },
+    {
+      name: "English Language",
+      sections: [
+        {
+          title: "Paper 1 - Writer's Effect",
+          content: "Structure:\n• Introduction: Overall effect of language in paragraph ___ is an image of ____\n• Body paragraphs:\n  - Choose words/phrases with interesting language\n  - Explain implicit and explicit meaning\n  - Identify part of speech and literary devices\n  - Describe effect on reader and mood/tone\n\nSummary Writing:\n• Keep within 10-15 words over limit\n• Use varied sentence structures\n• Include transitional phrases"
+        },
+        {
+          title: "Paper 2 - Writing",
+          content: "Focus on one text type (narrative or descriptive)\n\nDescriptive Essay Structure:\n• Setting/Atmosphere\n• Zoom in\n• Zoom in further (detailed descriptions)\n• Zoom out\n• Slight change\n\nKey Tip: Use all five senses and imagery types (visual, sensory, auditory)"
+        }
+      ],
+      downloadUrl: "#english-writing-guide",
+    }
   ];
 
   return (
@@ -136,7 +115,7 @@ Slight change
                   </div>
                 ))}
               </div>
-              
+
               <div className="mt-4">
                 <Link href={subject.downloadUrl}>
                   <a className="text-blue-600 hover:underline inline-flex items-center">
