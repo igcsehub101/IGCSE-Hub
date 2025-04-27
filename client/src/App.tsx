@@ -18,6 +18,7 @@ import Chemistry from "@/pages/subjects/Chemistry";
 import Biology from "@/pages/subjects/Biology";
 import Physics from "@/pages/subjects/Physics";
 import French from "@/pages/subjects/French";
+import Mathematics from "@/pages/subjects/Mathematics";
 import Economics from "@/pages/subjects/Economics";
 import ComputerScience from "@/pages/subjects/ComputerScience";
 import EnglishLanguage from "@/pages/subjects/EnglishLanguage";
