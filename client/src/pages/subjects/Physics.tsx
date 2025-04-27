@@ -62,7 +62,7 @@ const Physics = () => {
             <p>Resources for the extended theory paper.</p>
             <ul className="list-disc pl-5 space-y-2">
               <li><a href="https://drive.google.com/file/d/143ZsBUhmQML5n2Eqk1tAM652aCAwAXQv/view" className="text-yellow-600 hover:underline">Theory Notes by Vasumitra Ghajbiye  </a></li>
-              <li><a href="https://drive.google.com/file/d/14LZszUbbS19q5_LbxP_E7WqoXAedoKe4/view" className="text-yellow-600 hover:underline">Defenitions by Vasumitra Ghajbiye</a></li>
+              <li><a href="https://drive.google.com/file/d/14LZszUbbS19q5_LbxP_E7WqoXAedoKe4/view" className="text-yellow-600 hover:underline">Definitions by Vasumitra Ghajbiye</a></li>
               <li><a href="https://drive.google.com/file/d/143SXTN_iOzXrX3uaJAkf7DVtmVj0hI3o/view" className="text-yellow-600 hover:underline">Common Past Paper Questions by Vasumitra Ghajbiye</a></li>
             </ul>
             

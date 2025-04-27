@@ -75,11 +75,92 @@ const Chemistry = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <p>Resources for the alternative to practical paper.</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-blue-600 hover:underline">Experiment Design Guidelines</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Data Analysis and Graph Skills</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Paper 6 Practice Questions</a></li>
-            </ul>
+
+            <div className="space-y-4">
+              <details className="bg-blue-50 p-4 rounded-lg">
+                <summary className="font-semibold cursor-pointer">Common ATP Questions</summary>
+                <div className="mt-4 space-y-6">
+                  <div className="bg-white p-4 rounded shadow-sm">
+                    <h4 className="font-semibold mb-2">Food Tests</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Starch: Iodine solution
+                       → Brown to blue/black</li>
+                      <li>Proteins: Biuret reagent
+                       → Blue to purple</li>
+                      <li>Reducing sugars: Heat Benedict’s after adding</li>
+                        <li>Fats (Emulsion test):
+                        Crush food sample with mortar and pestle, Put in a test tube, Add ethanol and shake. Add distilled water. Milky white emulsion seen.
+
+
+</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-4 rounded shadow-sm">
+                    <h4 className="font-semibold mb-2">Trial Reading</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>To check if the dependent variable is measurable</li>
+                      <li>Ensures the range of distance (d) and time (t) values is suitable</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-4 rounded shadow-sm">
+                    <h4 className="font-semibold mb-2">Load and Scale</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Measure the distance from the rule to the bench at both ends and adjust until equal</li>
+                      <li>Suspend the load using a loop of thread for accurate placement</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-4 rounded shadow-sm">
+                    <h4 className="font-semibold mb-2">Common Errors</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Metre rule may not be uniform</li>
+                      <li>Test load might not be exactly × N</li>
+                      <li>Top pan balance accurate only to the nearest gram</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-4 rounded shadow-sm">
+                    <h4 className="font-semibold mb-2">Temperature Measurements</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Line of sight must be perpendicular to the thermometer scale</li>
+                      <li>Stir the water to ensure uniform temperature</li>
+                      <li>Keep factors constant: volume, initial temperature, container dimensions, room temperature</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-4 rounded shadow-sm">
+                    <h4 className="font-semibold mb-2">Ray Tracing</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Use thin pins and pencils</li>
+                      <li>Ensure large pin separation</li>
+                      <li>Keep pins vertical</li>
+                      <li>View from bottom of pins</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-4 rounded shadow-sm">
+                    <h4 className="font-semibold mb-2">Electricity Experiments</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Check crocodile clip connections</li>
+                      <li>Use appropriate scales for wire measurements</li>
+                      <li>Use variable resistors for continuous value adjustment</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-4 rounded shadow-sm">
+                    <h4 className="font-semibold mb-2">Lens Experiments</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Use a dark room</li>
+                      <li>Ensure lens, object, and screen are perpendicular to bench</li>
+                      <li>Clamp components securely</li>
+                      <li>Use translucent screen</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </div>
           </CardContent>
         </Card>
       </div>

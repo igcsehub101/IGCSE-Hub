@@ -28,47 +28,27 @@ const French = () => {
           <CardContent className="space-y-4">
             <p>Essential vocabulary and useful phrases for IGCSE French.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-orange-600 hover:underline">Daily Life Vocabulary</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Travel and Tourism Phrases</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">School and Education Terms</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Family and Relationships Vocabulary</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Food and Dining Expressions</a></li>
+              <li><a href="https://drive.google.com/file/d/1SGwND8lKZO8a9lXBEEjByS90MyBDbMP9/view?usp=sharing" className="text-orange-600 hover:underline">Topic Wise Expressions</a></li>
+               <li><a href="https://drive.google.com/file/d/1AmKFlq6qnuSzMdEl32ywC3-yrO0DIzHG/view?usp=sharing" className="text-orange-600 hover:underline">Useful Phrases for Writing and Speaking</a></li>
             </ul>
           </CardContent>
         </Card>
         
-        {/* Speaking Tips */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl text-orange-700">Speaking Tips</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p>Strategies and resources to improve your French speaking skills.</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-orange-600 hover:underline">Oral Exam Preparation Guide</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Pronunciation Practice</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Role-Play Scenarios</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Conversation Starters and Responses</a></li>
-            </ul>
-          </CardContent>
-        </Card>
-        
-        {/* Grammar Resources */}
+        {/* Tenses */}
         <Card className="mb-8">
           <CardHeader>
             <CardTitle className="text-xl text-orange-700">Grammar Resources</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p>Comprehensive guides to French grammar for IGCSE students.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-orange-600 hover:underline">Verb Conjugation Tables</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Tenses Overview (Present, Past, Future)</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Articles and Prepositions Guide</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Adjective Agreement Rules</a></li>
-              <li><a href="#" className="text-orange-600 hover:underline">Question Formation</a></li>
+              <li><a href="https://drive.google.com/file/d/1GdVZVPnY8irtXvoRG5begcJXqj7wj81F/view?usp=sharing" className="text-orange-600 hover:underline">Tenses and modes with examples</a></li>
+              <li><a href="https://drive.google.com/file/d/1mVyGpuL0HBn1FMepMsnC96nEhCRgsY-P/view?usp=sharing" className="text-orange-600 hover:underline">Essential verb conjugations</a></li>
+              <li><a href="https://francais.lingolia.com/en/grammar/conjugator" className="text-orange-600 hover:underline"> Lingolia: Verb Conjugator </a></li>
             </ul>
           </CardContent>
         </Card>
+        
+        
       </div>
     </section>
   );
