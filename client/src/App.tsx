@@ -8,7 +8,6 @@ import Home from "@/pages/Home";
 import LastMinuteTips from "@/pages/LastMinuteTips";
 import Resources from "@/pages/Resources";
 import HardQuestions from "@/pages/HardQuestions";
-import StudyTools from "@/pages/StudyTools";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Contribute from "@/pages/Contribute"; // Added import
@@ -34,7 +33,6 @@ function Router() {
           <Route path="/resources" component={Resources} />
           <Route path="/hard-questions" component={HardQuestions} />
           <Route path="/contribute" component={Contribute} />
-          <Route path="/study-tools" component={StudyTools} /> {/* Added Contribute route */}
 
           {/* Subject Routes */}
           <Route path="/subjects/chemistry" component={Chemistry} />

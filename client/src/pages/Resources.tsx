@@ -71,13 +71,7 @@ const Resources = () => {
       color: "yellow",
       path: "/subjects/computer-science",
     },
-    {
-      title: "Study Tools",
-      icon: Wrench,
-      color: "pink",
-      path: "/study-tools",
-    },
-  ];
+    ];
 
   const additionalResources = {
     youtube: [
