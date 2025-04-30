@@ -5,7 +5,7 @@ import AccordionItem from "@/components/AccordionItem";
 const LastMinuteTips = () => {
   const subjects = [
     {
-      name: "Science",
+      name: "Physics, Chemistry and Biology",
       sections: [
         {
           title: "General Advice (Exam Prep)",
@@ -21,7 +21,8 @@ const LastMinuteTips = () => {
         },
         {
           title: "Paper 6 - Biology",
-          content: `• Experiment: independent, dependent and control variable
+          content: `Experiment:
+• Independent, dependent and control variable
 • Method
 • Safety precautions
 • Repeat experiment 3 times and find average
@@ -36,10 +37,11 @@ Line graph: when say 'passing through points' or 'suitable graph' or 'when there
         },
         {
           title: "Paper 6 - Physics",
-          content: `• Experiment: Include all pointers in the question
+          content: `Experiment:
+• Include all pointers in the question
 • Add the units in the table
 • Additional points:
-  - at least 5 sets of data taken
+  - at least 5 sets of data taken  
   - repeat for each value of independent variable and take average`
         },
         {
