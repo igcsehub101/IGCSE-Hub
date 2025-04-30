@@ -17,11 +17,11 @@ const Chemistry = () => {
           </Link>
           <h1 className="text-3xl font-bold ml-4">Chemistry Resources</h1>
         </div>
-        
+
         <Separator className="my-6" />
-        
-        
-        
+
+
+
         {/* Formula Sheet */}
         <Card className="mb-8">
           <CardHeader>
@@ -31,11 +31,11 @@ const Chemistry = () => {
             <p>Essential formulas and equations for IGCSE Chemistry.</p>
             <ul className="list-disc pl-5 space-y-2">
               <li><a href="https://quizlet.com/ruthhelenafox/folders/cie-igcse-chemistry-06200917/sets" className="text-blue-600 hover:underline">Quizlet - Topic Wise Flashcards</a></li>
-            
+
             </ul>
           </CardContent>
         </Card>
-        
+
         {/* Paper 2 */}
         <Card className="mb-8">
           <CardHeader>
@@ -50,7 +50,7 @@ const Chemistry = () => {
             </ul>
           </CardContent>
         </Card>
-        
+
         {/* Paper 4 */}
         <Card className="mb-8">
           <CardHeader>
@@ -65,7 +65,7 @@ const Chemistry = () => {
             </ul>
           </CardContent>
         </Card>
-        
+
         {/* Paper 6 */}
         <Card className="mb-8">
           <CardHeader>
@@ -79,18 +79,68 @@ const Chemistry = () => {
                 <summary className="font-semibold cursor-pointer">Common ATP Questions</summary>
                 <div className="mt-4 space-y-6">
                   <div className="bg-white p-4 rounded shadow-sm">
+                    <h4 className="font-semibold mb-2">Important Points to Remember</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Waste gases like methane should not be released into atmosphere because they are flammable</li>
+                      <li>Wrapping beaker in cotton wool after heating improves accuracy by:
+                        <ul className="list-circle pl-5">
+                          <li>Providing insulation/reducing heat loss</li>
+                          <li>Keeping temperature more constant</li>
+                        </ul>
+                      </li>
+                      <li>Burette advantages:
+                        <ul className="list-circle pl-5">
+                          <li>More accurate than measuring cylinder for volume</li>
+                          <li>Can measure variable volumes unlike pipettes</li>
+                        </ul>
+                      </li>
+                      <li>Using larger beaker (250cm³ vs 100cm³) results in shorter times due to less depth to look through</li>
+                      <li>Flame test procedure:
+                        <ul className="list-circle pl-5">
+                          <li>Use wire/splint to introduce substance into flame</li>
+                          <li>Place sample in roaring/blue/non-luminous Bunsen flame</li>
+                        </ul>
+                      </li>
+                      <li>Hot water usage: Increases dissolution rate</li>
+                      <li>For reliable results: Repeat and compare measurements</li>
+                      <li>Stirring is important to:
+                        <ul className="list-circle pl-5">
+                          <li>Enable reaction</li>
+                          <li>Ensure uniform temperature</li>
+                          <li>Mix reactants thoroughly</li>
+                        </ul>
+                      </li>
+                      <li>For hottest Bunsen flame: Keep air hole fully open</li>
+                      <li>Why something isn't rinsed: When using same solution/solution hasn't changed</li>
+                      <li>First gas bubbles not collected: Contains air</li>
+                      <li>Conical flask swirling: To mix reactants</li>
+                      <li>Volumetric pipette limitations: Can't be used when volume needed varies between experiments</li>
+                      <li>Running acid through burette:
+                        <ul className="list-circle pl-5">
+                          <li>Ensures acid level is on scale</li>
+                          <li>Fills tap/portion below tap</li>
+                        </ul>
+                      </li>
+                      <li>Burette rinsing after water: To remove water residue</li>
+                      <li>Air collection in measuring cylinder:
+                        <ul className="list-circle pl-5">
+                          <li>Displaced by formed gas (e.g., CO₂)</li>
+                          <li>Doesn't affect accuracy as displaced volume equals gas volume</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-4 rounded shadow-sm">
                     <h4 className="font-semibold mb-2">Food Tests</h4>
                     <ul className="list-disc pl-5 space-y-2">
                       <li>Starch: Iodine solution
                        → Brown to blue/black</li>
                       <li>Proteins: Biuret reagent
                        → Blue to purple</li>
-                      <li>Reducing sugars: Heat Benedict’s after adding</li>
-                        <li>Fats (Emulsion test):
-                        Crush food sample with mortar and pestle, Put in a test tube, Add ethanol and shake. Add distilled water. Milky white emulsion seen.
-
-
-</li>
+                      <li>Reducing sugars: Heat Benedict's after adding</li>
+                      <li>Fats (Emulsion test):
+                        Crush food sample with mortar and pestle, Put in a test tube, Add ethanol and shake. Add distilled water. Milky white emulsion seen.</li>
                     </ul>
                   </div>
 
