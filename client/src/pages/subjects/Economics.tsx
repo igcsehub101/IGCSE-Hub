@@ -50,7 +50,14 @@ const Economics = () => {
                   <img 
                     src={ppcDiagram} 
                     alt="Production Possibility Curve" 
-                    className="w-full rounded-md mb-3" 
+                    className="w-full rounded-md mb-3 cursor-pointer" 
+                    onClick={(e) => {
+                      if (e.target instanceof HTMLImageElement) {
+                        if (e.target.requestFullscreen) {
+                          e.target.requestFullscreen();
+                        }
+                      }
+                    }}
                   />
                   <p className="text-sm text-gray-700">Shows maximum production potential and opportunity cost between different goods.</p>
                 </div>
@@ -65,7 +72,14 @@ const Economics = () => {
                   <img 
                     src={economiesOfScale} 
                     alt="Economies of Scale" 
-                    className="w-full rounded-md mb-3" 
+                    className="w-full rounded-md mb-3 cursor-pointer" 
+                    onClick={(e) => {
+                      if (e.target instanceof HTMLImageElement) {
+                        if (e.target.requestFullscreen) {
+                          e.target.requestFullscreen();
+                        }
+                      }
+                    }}
                   />
                   <p className="text-sm text-gray-700">Illustrates how larger production can lead to lower average costs for firms.</p>
                 </div>
@@ -80,7 +94,14 @@ const Economics = () => {
                   <img 
                     src={equilibriumD} 
                     alt="Market Equilibrium" 
-                    className="w-full rounded-md mb-3" 
+                    className="w-full rounded-md mb-3 cursor-pointer" 
+                    onClick={(e) => {
+                      if (e.target instanceof HTMLImageElement) {
+                        if (e.target.requestFullscreen) {
+                          e.target.requestFullscreen();
+                        }
+                      }
+                    }}
                   />
                   <p className="text-sm text-gray-700">Shows market clearing price and quantity with excess supply and demand scenarios.</p>
                 </div>
@@ -95,7 +116,14 @@ const Economics = () => {
                   <img 
                     src={indirectTax} 
                     alt="Indirect Taxation" 
-                    className="w-full rounded-md mb-3" 
+                    className="w-full rounded-md mb-3 cursor-pointer" 
+                    onClick={(e) => {
+                      if (e.target instanceof HTMLImageElement) {
+                        if (e.target.requestFullscreen) {
+                          e.target.requestFullscreen();
+                        }
+                      }
+                    }}
                   />
                   <p className="text-sm text-gray-700">Demonstrates the effects of an indirect tax on market prices and burden distribution.</p>
                 </div>
@@ -110,7 +138,14 @@ const Economics = () => {
                   <img 
                     src={demandDiagram} 
                     alt="Demand Curve" 
-                    className="w-full rounded-md mb-3" 
+                    className="w-full rounded-md mb-3 cursor-pointer" 
+                    onClick={(e) => {
+                      if (e.target instanceof HTMLImageElement) {
+                        if (e.target.requestFullscreen) {
+                          e.target.requestFullscreen();
+                        }
+                      }
+                    }}
                   />
                   <p className="text-sm text-gray-700">Illustrates movements along and shifts of the demand curve in different scenarios.</p>
                 </div>
@@ -125,7 +160,14 @@ const Economics = () => {
                   <img 
                     src={supplyDiagrams} 
                     alt="Supply Curve" 
-                    className="w-full rounded-md mb-3" 
+                    className="w-full rounded-md mb-3 cursor-pointer" 
+                    onClick={(e) => {
+                      if (e.target instanceof HTMLImageElement) {
+                        if (e.target.requestFullscreen) {
+                          e.target.requestFullscreen();
+                        }
+                      }
+                    }}
                   />
                   <p className="text-sm text-gray-700">Demonstrates extensions, contractions, and shifts in the supply curve.</p>
                 </div>
@@ -140,7 +182,14 @@ const Economics = () => {
                   <img 
                     src={labourSupply} 
                     alt="Labour Supply" 
-                    className="w-full rounded-md mb-3" 
+                    className="w-full rounded-md mb-3 cursor-pointer" 
+                    onClick={(e) => {
+                      if (e.target instanceof HTMLImageElement) {
+                        if (e.target.requestFullscreen) {
+                          e.target.requestFullscreen();
+                        }
+                      }
+                    }}
                   />
                   <p className="text-sm text-gray-700">Shows how labour supply changes with different wage rates, including income effects.</p>
                 </div>
@@ -155,7 +204,14 @@ const Economics = () => {
                   <img 
                     src={elasticityOfDemand} 
                     alt="Elasticity of Demand" 
-                    className="w-full rounded-md mb-3" 
+                    className="w-full rounded-md mb-3 cursor-pointer" 
+                    onClick={(e) => {
+                      if (e.target instanceof HTMLImageElement) {
+                        if (e.target.requestFullscreen) {
+                          e.target.requestFullscreen();
+                        }
+                      }
+                    }}
                   />
                   <p className="text-sm text-gray-700">Different types of price elasticity from perfectly elastic to perfectly inelastic.</p>
                 </div>
@@ -170,7 +226,14 @@ const Economics = () => {
                   <img 
                     src={costsAndRevenue} 
                     alt="Costs and Revenue" 
-                    className="w-full rounded-md mb-3" 
+                    className="w-full rounded-md mb-3 cursor-pointer" 
+                    onClick={(e) => {
+                      if (e.target instanceof HTMLImageElement) {
+                        if (e.target.requestFullscreen) {
+                          e.target.requestFullscreen();
+                        }
+                      }
+                    }}
                   />
                   <p className="text-sm text-gray-700">Important cost concepts including fixed, variable, and average costs related to output.</p>
                 </div>
