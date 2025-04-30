@@ -20,9 +20,8 @@ const LastMinuteTips = () => {
           content: "• Memorize definitions from the syllabus doc\n• Revise key words required by reviewing mark schemes\n• Practice past papers by timing yourself and marking yourself\n• Make your own formula sheet to ensure you know all the formulas"
         },
         {
-          title: "Paper 6",
-          content: `Biology:
-• Experiment: independent, dependent and control variable
+          title: "Paper 6 - Biology",
+          content: `• Experiment: independent, dependent and control variable
 • Method
 • Safety precautions
 • Repeat experiment 3 times and find average
@@ -33,28 +32,19 @@ Drawing question:
 • Avoiding shading
 • Draw according to the magnification asked in the paper
 
-Physics:
-• Experiment: Include all pointers in the question
-• Add the units in the table
-• At least 5 sets of data taken
-• Repeat for each value of independent variable and take average
-
-Chemistry:
-• Taking measurements from burette/measuring cylinder - correct to 3 significant figures
-• Underline important information in experiments
-• Always draw a smooth line graph
-
-Line graph: when say 'passing through points' or 'suitable graph' or 'when there is time as variable'. It can be a straight (best fit line) or smooth curve
-
-Physics:
-• Experiment: Include all pointers in the question
+Line graph: when say 'passing through points' or 'suitable graph' or 'when there is time as variable'. It can be a straight (best fit line) or smooth curve`
+        },
+        {
+          title: "Paper 6 - Physics",
+          content: `• Experiment: Include all pointers in the question
 • Add the units in the table
 • Additional points:
   - at least 5 sets of data taken
-  - repeat for each value of independent variable and take average
-
-Chemistry:
-• Taking measurements from burette/measuring cylinder - correct to 3 significant figures
+  - repeat for each value of independent variable and take average`
+        },
+        {
+          title: "Paper 6 - Chemistry",
+          content: `• Taking measurements from burette/measuring cylinder - correct to 3 significant figures
 • Underline important information in experiments
 • Always draw a smooth line graph`
         }
