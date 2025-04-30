@@ -30,10 +30,8 @@ const Chemistry = () => {
           <CardContent className="space-y-4">
             <p>Essential formulas and equations for IGCSE Chemistry.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-blue-600 hover:underline">Moles and Stoichiometry Formulas</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Gas Laws and Calculations</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Electrolysis Equations</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Acid-Base Reactions</a></li>
+              <li><a href="https://quizlet.com/ruthhelenafox/folders/cie-igcse-chemistry-06200917/sets" className="text-blue-600 hover:underline">Quizlet - Topic Wise Flashcards</a></li>
+            
             </ul>
           </CardContent>
         </Card>
@@ -46,8 +44,8 @@ const Chemistry = () => {
           <CardContent className="space-y-4">
             <p>Resources for the multiple-choice paper.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-blue-600 hover:underline">Paper 2 Practice Questions</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Multiple Choice Strategies</a></li>
+              <li><a href="https://drive.google.com/drive/folders/1nDiYbQoqKujvqVin_ENK4UzUZxy3gXCJ" className="text-blue-600 hover:underline">Year-wise Hard P2 Questions by Fruitadella</a></li>
+              <li><a href="https://drive.google.com/drive/u/4/folders/1IzqljJFYCRoCe7U7diylSVq_qvJZwMXC" className="text-blue-600 hover:underline">Other hard MCQS with Explanatios </a></li>
               <li><a href="#" className="text-blue-600 hover:underline">Common Misconceptions</a></li>
             </ul>
           </CardContent>
