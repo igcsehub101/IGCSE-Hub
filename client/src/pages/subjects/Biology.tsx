@@ -46,7 +46,6 @@ const Biology = () => {
             <ul className="list-disc pl-5 space-y-2">
               <li><a href="https://drive.google.com/drive/folders/1dc9C5IcAN8U-B5EUvr0N1TWIueUe6i0s" className="text-green-600 hover:underline"> Hardest Paper 2 </a></li>
               <li><a href="#" className="text-green-600 hover:underline">Multiple Choice Strategies</a></li>
-              <li><a href="#" className="text-green-600 hover:underline">Common Misconceptions</a></li>
             </ul>
           </CardContent>
         </Card>
@@ -61,8 +60,11 @@ const Biology = () => {
             <ul className="list-disc pl-5 space-y-2">
               <li><a href="https://drive.google.com/file/d/14MO2iTAWR1NDHICuFBp6bxa5sCod9NcH/view" className="text-green-600 hover:underline">Common Past Paper Questions By Vasumitra</a></li>
               <li><a href="https://docs.google.com/document/d/1yRSoITH2GhiWCuTDtILexoEusTDX-3OboY8WRqpmGQk/edit?usp=sharing" className="text-green-600 hover:underline">Topical Mark Schemes</a></li>
-              <li><a href="https://drive.google.com/file/d/14MO2iTAWR1NDHICuFBp6bxa5sCod9NcH/view" className="text-green-600 hover:underline"></a> Notes by Vasumitra</li>
-              <li><a href="https://docs.google.com/document/d/1N81fuUzth8KA_HJxjsepscoRkHJtUM5RVdmMt0HQLoc/edit?tab=t.0#heading=h.80661fvhb7tp" className="text-green-600 hover:underline"></a> Comprehensive notes by FrogDumpling</li>
+
+              <li><a href="https://drive.google.com/file/d/14LkZ1aKqpq25M_oB1Wh-i27ycoNbztU0/view" className="text-green-600 hover:underline">Past Paper Questions by Vasumitra</a></li>
+
+              <li><a href="https://docs.google.com/document/d/1N81fuUzth8KA_HJxjsepscoRkHJtUM5RVdmMt0HQLoc/edit?tab=t.0" className="text-green-600 hover:underline"> Quick Revision Notes by frogdumpling </a></li>
+              
             </ul>
           </CardContent>
         </Card>

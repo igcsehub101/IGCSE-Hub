@@ -58,9 +58,9 @@ const Chemistry = () => {
           <CardContent className="space-y-4">
             <p>Resources for the extended theory paper.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-blue-600 hover:underline">Paper 4 Past Paper Solutions</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Long Answer Question Templates</a></li>
-              <li><a href="#" className="text-blue-600 hover:underline">Exam Technique Guide</a></li>
+              <li><a href="https://drive.google.com/file/d/1c8k46LN-dnZZdXtlCYs6Tnea6Qpee2IX/view?usp=sharing" className="text-blue-600 hover:underline">Quick Theory Revision Notes</a></li>
+              <li><a href="https://drive.google.com/file/d/13ph08VVGGuYeZKr92n1aArWcCVCXvw5Q/view" className="text-blue-600 hover:underline">Common Past Paper Questions by Vasumitra Gajbhiye</a></li>
+              <li><a href="https://drive.google.com/file/d/13yx__vP2Yx1r5qqZIzgae-RUjIyIhj6S/view" className="text-blue-600 hover:underline">Past Paper Notes by Vasumitra Gajbhiye</a></li>
             </ul>
           </CardContent>
         </Card>
