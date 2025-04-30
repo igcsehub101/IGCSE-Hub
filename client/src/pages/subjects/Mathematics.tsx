@@ -1,3 +1,4 @@
+
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -28,7 +29,7 @@ const Mathematics = () => {
           <CardContent className="space-y-4">
             <p>Essential formulas and equations for IGCSE Additional/Extended Mathematics.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="" className="text-pink-600 hover:underline">Algebraic Formulas</a></li>
+              <li><a href="#" className="text-pink-600 hover:underline">Algebraic Formulas</a></li>
               <li><a href="#" className="text-pink-600 hover:underline">Trigonometric Identities</a></li>
               <li><a href="#" className="text-pink-600 hover:underline">Coordinate Geometry Equations</a></li>
               <li><a href="#" className="text-pink-600 hover:underline">Calculus Formulas</a></li>
@@ -37,20 +38,25 @@ const Mathematics = () => {
             </ul>
           </CardContent>
         </Card>
-        
-        {/* Useful Links */}
+
+        {/* Topical Questions */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-xl text-pink-700">Links</CardTitle>
+            <CardTitle className="text-xl text-pink-700">Topical Questions</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p>Helpful websites and resources for mathematics study.</p>
+            <p>Practice questions organized by topic to help you master specific areas.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-pink-600 hover:underline">Topic-by-Topic Practice Questions</a></li>
-              <li><a href="#" className="text-pink-600 hover:underline">Interactive Graph Plotter</a></li>
-              <li><a href="#" className="text-pink-600 hover:underline">Step-by-Step Problem Solver</a></li>
-              <li><a href="#" className="text-pink-600 hover:underline">Video Tutorials for Complex Topics</a></li>
-              <li><a href="#" className="text-pink-600 hover:underline">Past Paper Solutions with Explanations</a></li>
+              <li>
+                <a 
+                  href="https://drive.google.com/drive/folders/10_UI_AKmO4O85EeMiZN6xqx0G0sLl1ol?usp=drive_link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-pink-600 hover:underline"
+                >
+                  Topic-wise Practice Questions
+                </a>
+              </li>
             </ul>
           </CardContent>
         </Card>
