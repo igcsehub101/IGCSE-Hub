@@ -24,17 +24,13 @@ const Mathematics = () => {
         {/* Formula Sheet */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-xl text-pink-700">Formula Sheet</CardTitle>
+            <CardTitle className="text-xl text-pink-700">Extended Maths</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <p>Essential formulas and equations for IGCSE Additional/Extended Mathematics.</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><a href="#" className="text-pink-600 hover:underline">Algebraic Formulas</a></li>
-              <li><a href="#" className="text-pink-600 hover:underline">Trigonometric Identities</a></li>
-              <li><a href="#" className="text-pink-600 hover:underline">Coordinate Geometry Equations</a></li>
-              <li><a href="#" className="text-pink-600 hover:underline">Calculus Formulas</a></li>
-              <li><a href="#" className="text-pink-600 hover:underline">Statistical Formulas</a></li>
-              <li><a href="#" className="text-pink-600 hover:underline">Vectors and Matrices</a></li>
+              <li><a href="https://drive.google.com/file/d/1eQAa6_EHawx80CtpmiyTznYe04WDjNEz/view?usp=drive_link" className="text-pink-600 hover:underline">Formula Booklet (old syllabus)</a></li>
+              <li><a href="https://drive.google.com/file/d/1FPaw-J0JN2ia5ip83q_L-531Yia8NLEh/view?usp=drive_link" className="text-pink-600 hover:underline">Hard Questions (2017-2024)</a></li>
             </ul>
           </CardContent>
         </Card>
@@ -42,7 +38,7 @@ const Mathematics = () => {
         {/* Topical Questions */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-xl text-pink-700">Topical Questions</CardTitle>
+            <CardTitle className="text-xl text-pink-700">Additional Maths</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <p>Practice questions organized by topic to help you master specific areas.</p>
@@ -54,9 +50,11 @@ const Mathematics = () => {
                   rel="noopener noreferrer"
                   className="text-pink-600 hover:underline"
                 >
-                  Topic-wise Practice Questions
+                 Topic-wise Practice Questions By Saad (Mathlete)
                 </a>
               </li>
+              <li><a href="https://drive.google.com/file/d/1TEWvGO7EU72KT9Jb34knbg3ql1R_UM1r/view?usp=drive_link" className="text-pink-600 hover:underline">Topical Classified Questions with Answers</a></li>
+              <li><a href="https://drive.google.com/file/d/18ruH1KsZsktNB-oJGsGydW9Q5W4gj0C-/view?usp=drive_link" className="text-pink-600 hover:underline">Series Questions (2002-2019)</a></li>
             </ul>
           </CardContent>
         </Card>
