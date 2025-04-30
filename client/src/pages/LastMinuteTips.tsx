@@ -1,7 +1,6 @@
-import { Clock } from "lucide-react";
+import { Clock, FileText, Download } from "lucide-react";
 import { Link } from "wouter";
 import AccordionItem from "@/components/AccordionItem";
-import { FileText } from "lucide-react";
 
 const LastMinuteTips = () => {
   const subjects = [
@@ -22,10 +21,37 @@ const LastMinuteTips = () => {
         },
         {
           title: "Paper 6",
-          content: "Biology:\n• Experiment: independent, dependent and control variable\n• Method\n• Safety precautions\n• Repeat experiment 3 times and find average\n\nDrawing question:\n• Use a sharp HB pencil\n• Draw a clear and similar shape\n• Avoiding shading\n• Draw according to the magnification asked in the paper\n\nLine graph: when say 'passing through points' or 'suitable graph' or 'when there is time as variable'. It can be a straight (best fit line) or smooth curve\n\nPhysics:\n• Experiment: Include all pointers in the question\n• Add the units in the table\n• Additional points:\n  - at least 5 sets of data taken\n  - repeat for each value of independent variable and take average\n\nChemistry:\n• Taking measurements from burette/measuring cylinder - correct to 3 significant figures\n• Underline important information in experiments\n• Always draw a smooth line graph"
+          content: `Biology:
+• Experiment: independent, dependent and control variable
+• Method
+• Safety precautions
+• Repeat experiment 3 times and find average
+
+Drawing question:
+• Use a sharp HB pencil
+• Draw a clear and similar shape
+• Avoiding shading
+• Draw according to the magnification asked in the paper
+
+Line graph: when say 'passing through points' or 'suitable graph' or 'when there is time as variable'. It can be a straight (best fit line) or smooth curve
+
+Physics:
+• Experiment: Include all pointers in the question
+• Add the units in the table
+• Additional points:
+  - at least 5 sets of data taken
+  - repeat for each value of independent variable and take average
+
+Chemistry:
+• Taking measurements from burette/measuring cylinder - correct to 3 significant figures
+• Underline important information in experiments
+• Always draw a smooth line graph`
         }
       ],
-      downloadUrl: "#science-quick-guide",
+      downloadUrls: [
+        { name: "Physics Last Minute Notes", url: "https://drive.google.com/file/d/1-z-C4wOf7RAkrpmlfRYEkp7ZMKYpQjGp/view?usp=drive_link" },
+        { name: "Chemistry Last Minute Notes", url: "https://drive.google.com/file/d/1c8k46LN-dnZZdXtlCYs6Tnea6Qpee2IX/view?usp=drive_link" }
+      ],
     },
     {
       name: "Economics",
@@ -39,7 +65,7 @@ const LastMinuteTips = () => {
           content: "Format of answers:\n• 4 markers: 2 knowledge points, 2 analysis points\n• 8 markers structure:\n  - 2 body paragraphs (for and against)\n  - Each paragraph: 3-4 knowledge points, 2-3 analysis points\n\nKey Tips:\n• Read mark schemes of hard questions\n• Revise important notes and keywords/definitions\n• Macroeconomic questions - connect points to macroeconomic aims\n• 6 and 8 markers - take points from every chapter, link to micro and macroeconomics\n• 8 markers - link each point back to the question\n\nTime management: Answer sub-questions in reverse order (8, 6, 4, 2)"
         }
       ],
-      downloadUrl: "#economics-quick-guide",
+      downloadUrls: [],
     },
     {
       name: "French",
@@ -61,7 +87,7 @@ const LastMinuteTips = () => {
           content: "• Refer to vocabulary in syllabus doc\n• Memorize common introduction for email and blog format\n• Structure: introduction, body paragraph, conclusion\n• Use transition words"
         }
       ],
-      downloadUrl: "#french-guide",
+      downloadUrls: [],
     },
     {
       name: "Computer Science",
@@ -75,7 +101,9 @@ const LastMinuteTips = () => {
           content: "15 marker:\n• Write comments as you write code\n• Revise different types of algorithms:\n  - Linear search\n  - Bubble sort\n• Revise loop structures:\n  - For\n  - While\n  - Repeat\n• Revise syntax for pseudocode statements"
         }
       ],
-      downloadUrl: "#cs-algorithm-cheat-sheet",
+      downloadUrls: [
+        { name: "Computer Science Last Minute Notes", url: "https://drive.google.com/file/d/1p8_zQbPFMQSyAqwD7nSJhYsyaAnbAqEr/view?usp=drive_link" }
+      ],
     },
     {
       name: "English Language",
@@ -89,7 +117,7 @@ const LastMinuteTips = () => {
           content: "Focus on one text type (narrative or descriptive)\n\nDescriptive Essay Structure:\n• Setting/Atmosphere\n• Zoom in\n• Zoom in further (detailed descriptions)\n• Zoom out\n• Slight change\n\nKey Tip: Use all five senses and imagery types (visual, sensory, auditory)"
         }
       ],
-      downloadUrl: "#english-writing-guide",
+      downloadUrls: [],
     }
   ];
 
@@ -107,22 +135,34 @@ const LastMinuteTips = () => {
         <div className="max-w-4xl mx-auto space-y-4">
           {subjects.map((subject, index) => (
             <AccordionItem key={index} title={subject.name}>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {subject.sections.map((section, i) => (
-                  <div key={i}>
-                    <h4 className="font-semibold mb-2">{section.title}</h4>
-                    <div className="pl-5 whitespace-pre-wrap">{section.content}</div>
+                  <div key={i} className="bg-white p-4 rounded-md shadow-sm">
+                    <h4 className="font-semibold text-lg text-red-700 mb-3 pb-2 border-b border-gray-100">{section.title}</h4>
+                    <div className="pl-5 whitespace-pre-wrap text-gray-700 space-y-2">{section.content}</div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-4">
-                <Link href={subject.downloadUrl}>
-                  <a className="text-blue-600 hover:underline inline-flex items-center">
-                    <FileText className="mr-2 h-4 w-4" /> Download {subject.name} Quick Guide
-                  </a>
-                </Link>
-              </div>
+              {subject.downloadUrls && subject.downloadUrls.length > 0 && (
+                <div className="mt-6 space-y-3">
+                  <h4 className="font-semibold text-lg mb-2">Last Minute Notes</h4>
+                  <div className="space-y-3">
+                    {subject.downloadUrls.map((download, i) => (
+                      <a 
+                        key={i}
+                        href={download.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 p-3 bg-white rounded-md shadow-sm hover:bg-red-50 transition-colors border border-gray-100"
+                      >
+                        <Download className="h-5 w-5 text-red-600" />
+                        <span className="text-red-700 font-medium">{download.name}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </AccordionItem>
           ))}
         </div>
