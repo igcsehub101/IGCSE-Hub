@@ -199,7 +199,7 @@ const Economics = () => {
                     >
                       Example Candidate Responses
                     </a>
-                    <p className="text-sm text-gray-600 mt-1">View real examples of candidate answers with examiner comments.</p>
+                    <p className="text-sm text-gray-600 mt-1">View real examples of candidate answers with examiner comments to understand what content the examiners want in your answers.</p>
                   </li>
                   <li>
                     <a 
@@ -221,7 +221,9 @@ const Economics = () => {
                     >
                       Topical Economics Questions
                     </a>
-                    <p className="text-sm text-gray-600 mt-1">Questions organized by topic to practice specific areas of the syllabus.</p>
+                    <p className="text-sm text-gray-600 mt-1">Questions and Mark Schemes organized by topic to practice specific areas of the syllabus.</p>
+                    <p className="text-sm text-blue-700 mt-1"><a href ="https://www.teachmeeconomics.com/home
+">Questions from TeachMeEconomics.</a></p>
                   </li>
                 </ul>
               </div>
@@ -238,7 +240,7 @@ const Economics = () => {
                     >
                       Hard Paper 2 Questions
                     </a>
-                    <p className="text-sm text-gray-600 mt-1">Challenging structured questions to test and develop your understanding.</p>
+                    
                   </li>
                   <li>
                     <a 
@@ -249,7 +251,7 @@ const Economics = () => {
                     >
                       Hard Paper 1 MCQs
                     </a>
-                    <p className="text-sm text-gray-600 mt-1">Difficult multiple-choice questions to sharpen your exam technique.</p>
+                
                   </li>
                 </ul>
               </div>
