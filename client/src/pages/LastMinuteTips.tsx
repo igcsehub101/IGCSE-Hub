@@ -33,6 +33,17 @@ Drawing question:
 • Avoiding shading
 • Draw according to the magnification asked in the paper
 
+Physics:
+• Experiment: Include all pointers in the question
+• Add the units in the table
+• At least 5 sets of data taken
+• Repeat for each value of independent variable and take average
+
+Chemistry:
+• Taking measurements from burette/measuring cylinder - correct to 3 significant figures
+• Underline important information in experiments
+• Always draw a smooth line graph
+
 Line graph: when say 'passing through points' or 'suitable graph' or 'when there is time as variable'. It can be a straight (best fit line) or smooth curve
 
 Physics:
