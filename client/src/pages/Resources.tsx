@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { LinkIcon, Globe, Youtube } from "lucide-react";
+import { LinkIcon, Globe, Youtube, ExternalLink } from "lucide-react";
 import { 
   FlaskRound, 
   FlaskConical, 
@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import SubjectFolder from "@/components/SubjectFolder";
+import { SiYoutube } from "react-icons/si";
 
 const Resources = () => {
   const subjects = [
@@ -73,18 +74,35 @@ const Resources = () => {
     },
     ];
 
-  const additionalResources = {
-    youtube: [
-      { name: "ScienceSimplified", url: "#science-simplified" },
-      { name: "MathTutorials", url: "#math-tutorials" },
-      { name: "EconomicsExplained", url: "#economics-explained" },
+  // YouTube channels organized by subject
+  const youtubeChannels = {
+    english: [
+      { name: "Taughtly", url: "https://www.youtube.com/@Taughtly" },
+      { name: "IGCSE SUCCESS", url: "https://www.youtube.com/@IGCSESUCCESS" },
     ],
-    websites: [
-      { name: "Khan Academy", url: "#khan-academy" },
-      { name: "Exam Board Resources", url: "#exam-board" },
-      { name: "SaveMyExams", url: "#save-my-exams" },
+    physics: [
+      { name: "PLA Academy", url: "https://www.youtube.com/@plaacademy" },
+    ],
+    maths: [
+      { name: "Ginger Mathematician", url: "https://www.youtube.com/@GingerMathematician" },
+      { name: "Mathlete by Saad", url: "https://www.youtube.com/@MathletebySaad" },
+    ],
+    pastPaperSolving: [
+      { name: "Ivan Lim (Add Math)", url: "https://www.youtube.com/@ivanlimhw" },
+      { name: "My Study Compass (0580)", url: "https://www.youtube.com/@MyStudyCompass" },
+      { name: "Learn Today IGCSE", url: "https://www.youtube.com/@learntodayIGCSE" },
     ],
   };
+
+  // General resources and links
+  const generalResources = [
+    { name: "Past Paper Tracking Template", url: "https://docs.google.com/spreadsheets/d/1fvR-uQTL7JDhVnqkicxrjfC5WAZse1o7I0QVeWmgJGw/edit?gid=1556526292#gid=1556526292" },
+    { name: "CAIE Finder - Past Paper Question Finder", url: "https://caiefinder.com/" },
+    { name: "IG Exams - Topical Questions", url: "https://igexams.com" },
+    { name: "Physics & Maths Tutor - Topical Questions", url: "https://www.physicsandmathstutor.com/" },
+    { name: "All Subject IGCSE Resources Drive", url: "https://drive.google.com/drive/folders/1G96_PG3jFzGBzhFjrWfMQVJOh1mcOA_x?usp=sharing" },
+    { name: "IGCSE Textbooks Collection", url: "https://drive.google.com/drive/folders/12v3l66wAsXKh4a2QZSKSb__LWmHdZM7_?usp=drive_link" },
+  ];
 
   return (
     <section className="py-12 px-4">
@@ -109,34 +127,106 @@ const Resources = () => {
           ))}
         </div>
 
-        <div className="max-w-4xl mx-auto mt-12 bg-white p-6 rounded-lg shadow-md">
-          <h3 className="font-semibold text-xl mb-4">Additional Resources</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="font-semibold mb-2">YouTube Channels</h4>
-              <ul className="space-y-2">
-                {additionalResources.youtube.map((channel, index) => (
-                  <li key={index} className="flex items-center">
-                    <Youtube className="h-4 w-4 text-red-600 mr-2" />
-                    <a href={channel.url} className="text-blue-600 hover:text-blue-800">
-                      {channel.name}
-                    </a>
-                  </li>
+        <div className="max-w-5xl mx-auto mt-12 bg-white p-6 rounded-lg shadow-md">
+          <h3 className="font-semibold text-xl mb-6">General Resources</h3>
+          
+          {/* YouTube Channels Section */}
+          <div className="mb-8">
+            <h4 className="font-semibold text-lg mb-4 pb-2 border-b">YouTube Channels</h4>
+            
+            {/* English YouTube Channels */}
+            <div className="mb-5">
+              <h5 className="font-medium text-blue-700 mb-2">English</h5>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {youtubeChannels.english.map((channel, index) => (
+                  <a 
+                    key={index} 
+                    href={channel.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-md transition-colors"
+                  >
+                    <SiYoutube className="text-red-600 text-2xl flex-shrink-0" />
+                    <span className="text-blue-600 hover:text-blue-800">{channel.name}</span>
+                  </a>
                 ))}
-              </ul>
+              </div>
             </div>
-            <div>
-              <h4 className="font-semibold mb-2">Study Websites</h4>
-              <ul className="space-y-2">
-                {additionalResources.websites.map((website, index) => (
-                  <li key={index} className="flex items-center">
-                    <Globe className="h-4 w-4 text-blue-600 mr-2" />
-                    <a href={website.url} className="text-blue-600 hover:text-blue-800">
-                      {website.name}
-                    </a>
-                  </li>
+            
+            {/* Physics YouTube Channels */}
+            <div className="mb-5">
+              <h5 className="font-medium text-blue-700 mb-2">Physics</h5>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {youtubeChannels.physics.map((channel, index) => (
+                  <a 
+                    key={index} 
+                    href={channel.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-md transition-colors"
+                  >
+                    <SiYoutube className="text-red-600 text-2xl flex-shrink-0" />
+                    <span className="text-blue-600 hover:text-blue-800">{channel.name}</span>
+                  </a>
                 ))}
-              </ul>
+              </div>
+            </div>
+            
+            {/* Mathematics YouTube Channels */}
+            <div className="mb-5">
+              <h5 className="font-medium text-blue-700 mb-2">Mathematics</h5>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {youtubeChannels.maths.map((channel, index) => (
+                  <a 
+                    key={index} 
+                    href={channel.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-md transition-colors"
+                  >
+                    <SiYoutube className="text-red-600 text-2xl flex-shrink-0" />
+                    <span className="text-blue-600 hover:text-blue-800">{channel.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+            
+            {/* Past Paper Solving YouTube Channels */}
+            <div className="mb-5">
+              <h5 className="font-medium text-blue-700 mb-2">Past Paper Solving</h5>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {youtubeChannels.pastPaperSolving.map((channel, index) => (
+                  <a 
+                    key={index} 
+                    href={channel.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-md transition-colors"
+                  >
+                    <SiYoutube className="text-red-600 text-2xl flex-shrink-0" />
+                    <span className="text-blue-600 hover:text-blue-800">{channel.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          {/* General Resources Links */}
+          <div>
+            <h4 className="font-semibold text-lg mb-4 pb-2 border-b">Resource Websites</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {generalResources.map((resource, index) => (
+                <a 
+                  key={index} 
+                  href={resource.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 p-3 hover:bg-gray-50 rounded-md transition-colors border border-gray-100"
+                >
+                  <ExternalLink className="text-blue-600 h-5 w-5 flex-shrink-0" />
+                  <span className="text-blue-600 hover:text-blue-800">{resource.name}</span>
+                </a>
+              ))}
             </div>
           </div>
         </div>
