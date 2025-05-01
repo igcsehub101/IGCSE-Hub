@@ -116,6 +116,36 @@ const LastMinuteTips = () => {
                 ))}
               </div>
 
+              {subject.name === "English Language" && (
+                <div className="mt-4 text-center">
+                  <Link href="/subjects/english-language">
+                    <a className="text-blue-600 hover:text-blue-800 font-medium">
+                      Check Out our English Language Page →
+                    </a>
+                  </Link>
+                </div>
+              )}
+
+              {subject.name === "French" && (
+                <div className="mt-4 text-center">
+                  <Link href="/subjects/french">
+                    <a className="text-blue-600 hover:text-blue-800 font-medium">
+                      Check Out our French Page →
+                    </a>
+                  </Link>
+                </div>
+              )}
+
+              {subject.name === "Economics" && (
+                <div className="mt-4 text-center">
+                  <Link href="/subjects/economics">
+                    <a className="text-blue-600 hover:text-blue-800 font-medium">
+                      Check Out our Economics Page →
+                    </a>
+                  </Link>
+                </div>
+              )}
+
               {subject.downloadUrls && subject.downloadUrls.length > 0 && (
                 <div className="mt-6 space-y-3">
                   <h4 className="font-semibold text-lg mb-2">Last Minute Notes</h4>
