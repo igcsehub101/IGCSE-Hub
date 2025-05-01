@@ -34,7 +34,7 @@ const Home = () => {
 
           <FolderIcon
             title="Important Links & Resources"
-            description="Curated links and materials for thorough study"
+            description="Study materials for maths,sciences, economics, computer science, french, and english."
             icon={LinkIcon}
             color="blue"
             path="/resources"

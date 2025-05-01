@@ -112,7 +112,7 @@ const Resources = () => {
             <LinkIcon className="h-8 w-8 text-blue-700" />
           </div>
           <h2 className="font-bold text-3xl">Important Links & Resources</h2>
-          <p className="text-gray-600 mt-2">Curated materials for comprehensive study</p>
+          <p className="text-gray-600 mt-2">Study materials organised by subject</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
