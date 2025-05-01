@@ -114,29 +114,37 @@ const LastMinuteTips = () => {
                     <div className="pl-5 whitespace-pre-wrap text-gray-700 space-y-2">{section.content}</div>
                   </div>
                 ))}
-              </div>
-
-              {subject.downloadUrls && subject.downloadUrls.length > 0 && (
-                <div className="mt-6 space-y-3">
-                  <h4 className="font-semibold text-lg mb-2">Last Minute Notes</h4>
-                  <div className="space-y-3">
-                    {subject.downloadUrls.map((download, i) => (
-                      <a 
-                        key={i}
-                        href={download.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 p-3 bg-white rounded-md shadow-sm hover:bg-red-50 transition-colors border border-gray-100"
-                      >
-                        <Download className="h-5 w-5 text-red-600" />
-                        <span className="text-red-700 font-medium">{download.name}</span>
+                {/* Links to subject pages */}
+                {subject.name === "English Language" && (
+                  <div className="mt-4 text-center">
+                    <Link href="/subjects/english-language">
+                      <a className="text-blue-600 hover:text-blue-800 font-medium">
+                        View detailed English Language resources →
                       </a>
-                    ))}
+                    </Link>
                   </div>
-                </div>
-              )}
-            </AccordionItem>
-          ))}
+                )}
+                {subject.name === "French" && (
+                  <div className="mt-4 text-center">
+                    <Link href="/subjects/french">
+                      <a className="text-blue-600 hover:text-blue-800 font-medium">
+                        View detailed French resources →
+                      </a>
+                    </Link>
+                  </div>
+                )}
+                {subject.name === "Economics" && (
+                  <div className="mt-4 text-center">
+                    <Link href="/subjects/economics">
+                      <a className="text-blue-600 hover:text-blue-800 font-medium">
+                        View detailed Economics resources →
+                      </a>
+                    </Link>
+                  </div>
+                )}
+              </AccordionItem>
+            ))}
+          </div>
         </div>
       </div>
     </section>
