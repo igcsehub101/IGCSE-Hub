@@ -120,7 +120,7 @@ const LastMinuteTips = () => {
                 <div className="mt-4 text-center">
                   <Link href="/subjects/english-language">
                     <a className="text-blue-600 hover:text-blue-800 font-medium">
-                      Check Out our English Language Page →
+                      Refer to our English Language Page →
                     </a>
                   </Link>
                 </div>
@@ -130,7 +130,7 @@ const LastMinuteTips = () => {
                 <div className="mt-4 text-center">
                   <Link href="/subjects/french">
                     <a className="text-blue-600 hover:text-blue-800 font-medium">
-                      Check Out our French Page →
+                      Refer to our French Page →
                     </a>
                   </Link>
                 </div>
@@ -140,7 +140,7 @@ const LastMinuteTips = () => {
                 <div className="mt-4 text-center">
                   <Link href="/subjects/economics">
                     <a className="text-blue-600 hover:text-blue-800 font-medium">
-                      Check Out our Economics Page →
+                      Refer to our Economics Page →
                     </a>
                   </Link>
                 </div>

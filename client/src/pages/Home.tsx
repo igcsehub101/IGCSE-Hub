@@ -1,7 +1,6 @@
 import {
   Clock,
   Link as LinkIcon,
-  HelpCircle,
 } from "lucide-react";
 import FolderIcon from "@/components/FolderIcon";
 
@@ -23,7 +22,7 @@ const Home = () => {
           Access past papers, revision guides, mark schemes, and helpful resources for all your exam preparation needs.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <FolderIcon
             title="Last Minute Tips"
             description="Quick revision guides for each subject"
@@ -34,18 +33,10 @@ const Home = () => {
 
           <FolderIcon
             title="Important Links & Resources"
-            description="Study materials for maths,sciences, economics, computer science, french, and english."
+            description="Study materials for maths, sciences, economics, computer science, french, and english."
             icon={LinkIcon}
             color="blue"
             path="/resources"
-          />
-
-          <FolderIcon
-            title="Hard Questions"
-            description="Challenging problems with detailed solutions"
-            icon={HelpCircle}
-            color="pink"
-            path="/hard-questions"
           />
         </div>
 
