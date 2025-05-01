@@ -4,32 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IGCSE Hub</title>
-  <meta http-equiv="refresh" content="0;url=../dist/public/index.html">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+    body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      padding: 50px; 
+      line-height: 1.6;
       background-color: #f0f8ff;
-      text-align: center;
     }
-    .container {
-      max-width: 600px;
-      padding: 30px;
-      background: white;
+    h1 { 
+      color: #4a86e8; 
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: #333;
+      font-size: 1.8rem;
+    }
+    .container { 
+      max-width: 800px; 
+      margin: 0 auto; 
+      background: white; 
+      padding: 40px; 
       border-radius: 10px;
       box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     }
-    h1 {
-      color: #4a86e8;
+    .subjects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
     }
-    .loading {
-      margin-top: 20px;
-      font-style: italic;
+    .subject {
+      background: #f1f1f1;
+      padding: 15px;
+      border-radius: 5px;
+      min-width: 120px;
+    }
+    .footer {
+      margin-top: 40px;
       color: #666;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -37,8 +53,31 @@
   <div class="container">
     <h1>IGCSE Hub</h1>
     <p>Welcome to IGCSE Hub - Your one-stop resource center for IGCSE study materials.</p>
-    <p class="loading">Redirecting to the main page...</p>
-    <p>If you are not redirected automatically, <a href="../dist/public/index.html">click here</a>.</p>
+    
+    <h2>Available Subjects</h2>
+    <div class="subjects">
+      <div class="subject">Biology</div>
+      <div class="subject">Chemistry</div>
+      <div class="subject">Physics</div>
+      <div class="subject">Mathematics</div>
+      <div class="subject">Economics</div>
+      <div class="subject">Computer Science</div>
+      <div class="subject">English Language</div>
+      <div class="subject">French</div>
+    </div>
+    
+    <p>This site provides comprehensive study resources for IGCSE students:</p>
+    <ul style="text-align:left; max-width:400px; margin:0 auto;">
+      <li>Past Paper PDFs</li>
+      <li>Specimen Papers</li>
+      <li>Syllabus Guides</li>
+      <li>Last-Minute Revision Tips</li>
+      <li>Subject-Specific Resources</li>
+    </ul>
+    
+    <div class="footer">
+      IGCSE Hub - Helping students excel in their IGCSE exams since 2023
+    </div>
   </div>
 </body>
 </html>
