@@ -1,0 +1,5 @@
+# Ignore everything except dist directory
+/*
+!dist/
+!package.json
+!vercel.json
