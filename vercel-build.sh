@@ -1,12 +1,11 @@
 #!/bin/bash
-# Simplified build script for Vercel deployment
+# Build script for Vercel deployment
 
 # Create a clean dist directory
 mkdir -p dist/public
-cp -r client/public/* dist/public/ || true
 
-# Copy the pre-built static files
-cp dist/public/index.html dist/public/index.html
+# Copy our simple static site into the deployment directory
+cp -r simple-site/* dist/public/
 
 # Done!
 echo "Build complete for static deployment!"

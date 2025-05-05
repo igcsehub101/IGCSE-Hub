@@ -1,13 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "dist/public/**",
-      "use": "@vercel/static"
-    }
-  ],
+  "buildCommand": "bash ./vercel-build.sh",
+  "outputDirectory": "dist/public",
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/dist/public/index.html" }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
