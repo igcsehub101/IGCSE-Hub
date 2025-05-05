@@ -1,0 +1,193 @@
+Common ATP Physics Questions (from past papers)
+Why Take 5 Readings?
+Reduces the effect of human reaction time error.
+
+
+Spreads error over a longer duration.
+
+
+Increases accuracy by taking an average.
+
+
+Trial Reading
+To check if the dependent variable is measurable.
+
+
+Ensures the range of distance (d) and time (t) values is suitable.
+
+
+
+Load and Scale
+Horizontal Scale Setup
+Measure the distance from the rule to the bench at both ends and adjust until equal.
+
+
+Positioning Load on Metre Rule
+Suspend the load using a loop of thread for accurate placement.
+
+
+Common Errors
+Metre rule may not be uniform.
+
+
+Test load might not be exactly × N.
+
+
+Top pan balance accurate only to the nearest gram.
+
+
+Measuring Pendulum Length Accurately
+View scale perpendicularly to avoid parallax error.
+
+
+Use a set square for alignment.
+
+
+Measure from the bottom of the clamp.
+
+
+For spherical bobs: measure to top and add half the diameter.
+
+
+Why It's Hard to Get Accurate Readings
+Masses can slide or may not balance exactly.
+
+
+Measuring Time for Oscillations
+Use a fiducial point (fixed reference point) to help count 10 oscillations precisely.
+
+
+
+Temperature
+Accurate Temperature Readings
+Line of sight must be perpendicular to the thermometer scale.
+
+
+Stir the water to ensure uniform temperature throughout the container.
+
+
+Keeping the Rate of Cooling Constant
+Keep these factors the same:
+
+
+Volume of water
+
+
+Initial temperature
+
+
+Container height, diameter, and surface area
+
+
+Room temperature
+
+
+Reducing Thermal Energy Loss
+Use:
+
+
+Insulation
+
+
+Lid
+
+
+Smaller surface area
+
+
+Stopper (if applicable)
+
+
+Avoiding Parallax Error
+Take readings at right angles to the scale.
+
+
+Reading a Measuring Cylinder
+Always read from the bottom of the meniscus.
+
+
+Ensure the cylinder is on a horizontal surface.
+
+
+Measuring Volume Accurately
+Large graduations in a 75 cm³ container can cause inaccuracy — use finer scales if possible.
+
+
+Investigating Cooling Rate
+Continue recording temperature as it approaches room temperature (r.t.p) over a long time to observe trends.
+
+
+
+
+Ray Trace
+Errors:
+Pins are thick.
+Hard to align pins.
+
+
+
+Precautions:
+Thin pencil.
+
+
+View bottom of pin.
+
+
+Large pin separation.
+
+
+Thin pins.
+
+
+Vertical pins.
+
+
+How to make it reproducible:
+Repeat with optical pins.
+
+
+
+Electricity
+Difficulties in resistance experiments:
+Connection of crocodile clips.
+
+
+Difficult to measure wire to nearest mm.
+
+
+Readings between marks.
+
+
+
+
+Variable Resistors
+Pros:
+Continuous set of values.
+
+
+More values of resistance/current.
+
+
+Easy to change current/resistance.
+
+
+Prevent resistance wire getting hot → Reduce emf of power supply.
+
+Lens
+Dark room.
+
+
+Lens, object, and screen perpendicular to bench / vertically upright.
+
+
+Clamp the bend.
+
+
+Translucent screen.
+
+
+
+
+
+
+

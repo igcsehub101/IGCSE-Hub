@@ -1,0 +1,133 @@
+In the Science dropdown change the “Key Topics” subheading to “General Advice”
+Remove the “quick formulas” section from Science on the right side and add 3 subheading which have body text labelled “Paper 2”, “Paper 4” and “Paper 6”
+
+In the French dropdown remove the “Key Topics” and “Study tips” subheading and make 4 sections which have body text labelled “Paper 1”, “Paper 2”, “Paper 3” and “Paper 4”
+
+In the economics dropdown remove “Key topics” and “Diagram checklist”. Create 3 sections with body text labeled “Paper 1”, “Paper 2” and “Time management”
+
+In the english language dropdown change “Key topics” to “Paper 1” and “Writing tips” to “Paper 2”
+
+In the computers dropdown change “Key topics” to “Paper 1” and “Coding Focus” to “Paper 2”
+And remove the “Common Pseudocode” section
+
+
+Under the english subheading, write and format the following info under the correct headings:
+
+Paper 1
+
+“Revise the formats for all of the text types
+
+Format for writers effect answer:
+
+Intro: The overall effect of language used in paragraph ___ is an image of ____
+Body paragraph: Choose words/short phrases that use interesting language. For each word/phrase explain both the implicit and explicit meaning. Identify the part of speech and any other literary devices used. Then describe the effect on the reader and identify the mood/tone created. 
+
+Summary writing:
+Ensure that the summary is no more than 10-15 words over the word limit. Use both simple and complex sentence structures and use transitional phrases in your answer.”
+
+Paper 2
+“Focus on preparing for one text type - narrative or descriptive 
+Structure of a descriptive essay:
+
+Setting/ Atmosphere
+Zoom in
+Zoom in again (describe everything in more detail)
+Zoom out
+Slight change
+- use the 5 senses - all types of imagery(visual, sensory, auditory)”
+
+
+
+Under the science subheading, write and format the following info under the correct headings:
+
+General advice (exam prep) “
+Review important notes 
+Use our checklist to ensure you have covered all the topics in the syllabus
+Review the hard questions”
+
+
+Paper 2
+“Review hardest MCQs and method to solve them
+Go over the syllabus doc
+Bio - revise the colour of the indicators, important diagrams
+Chem - revise the cation/anion/gas tests”
+
+Paper 4
+“Memorize definitions from the syllabus doc
+Revise key words required by reviewing mark schemes 
+Practice past papers by timing yourself and marking yourself
+Make your own formula sheet to ensure you know all the formulas”
+
+
+Paper 6
+
+“Biology
+Experiment
+independent , dependent and control variable
+Method
+Safety precautions 
+Repeat experiment 3 times and find average 
+
+drawing question:
+Use a sharp HB pencil.
+Draw a clear and similar shape.
+Avoiding shading
+Draw according to the magnification asked in the paper.
+
+Line graph: when say ‘passing through points’ or ‘suitable graph’ or ‘when there is time as variable’. It can be a straight (best fit line) or smooth curve.
+
+Physics
+
+Experiment: 
+Include all pointers in the question
+Add the units in the table
+Additional points:
+at least 5 sets of data taken  
+repeat for each value of independent variable and take average  
+
+
+Chemistry 
+Taking measurements from burette/measuring cylinder - correct to 3 significant figures
+Underline important information in experiments 
+Always draw a smooth line graph”
+
+Under the economics subheading type and format the following info under the correct headings
+Paper 1 
+
+“Revise the formulas for CPI, PED, PES
+Go over the graphs for supply and demand, PPCs, currency, and the firm graphs ie fixed costs , average costs
+Time and solve past papers”
+
+Paper 2
+
+“Format of answers:
+4 markers: 2 knowledge points, 2 analysis points
+8 markers: 
+Structure: 2 body paragraphs, one for and against the question
+For each body paragraph, 3 or 4 knowledge points and 2/ 3 analysis points 
+
+Read mark schemes of hard questions
+Revise important notes
+Revise keywords and definitions 
+Macroeconomic questions - connect points to macroeconomic aims
+6 and 8 markers - take points from every chapter - link to micro and macroeconomics
+8 markers - link each point back to the question”
+
+Time management
+
+“for each question, answer the sub-questions in reverse order: ie 8 6 4 2”
+
+Under the computer science subheading, write and format the following information under the correct suv headings 
+
+Paper 2
+“15 marker 
+Write the comments as you write the code
+Revise the different types algorithms- linear search, bubble sort
+Revise the loop structures: for, while and repeat
+Revise the syntax for pseudocode statements”
+
+Paper 1
+“Revise from the mark schemes for key terms
+Practice drawing diagrams for different concepts such as https, cyberattacks, blockchain, types of transmission 
+Practice conversions between denary, hexadecimal and binary”
+
