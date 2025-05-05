@@ -1,11 +1,15 @@
 #!/bin/bash
-# Build script for Vercel deployment
+# Build script for Vercel deployment of the full React application
 
-# Create a clean dist directory
-mkdir -p dist/public
+# Install dependencies
+npm install
 
-# Copy our simple static site into the deployment directory
-cp -r simple-site/* dist/public/
+# Build the client-side React application
+npm run build
+
+# Copy assets to the output directory to ensure they're available
+mkdir -p dist/public/assets
+cp -r attached_assets/* dist/public/assets/ || true
 
 # Done!
-echo "Build complete for static deployment!"
+echo "Build complete for full React app deployment!"

@@ -1,9 +1,8 @@
 {
   "version": 2,
   "buildCommand": "bash ./vercel-build.sh",
-  "outputDirectory": "dist/public",
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
